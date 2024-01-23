@@ -54,6 +54,162 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 91,
 	},
+	solublebody: {
+		{
+        onSourceModifyDamage(damage, source, target, move) {
+            let mod = 1;
+            if (move.type === 'Fire') mod *= 2;
+            if (move.flags['contact']) mod /= 2;
+            return this.chainModify(mod);
+        },
+        flags: {breakable: 1},
+        name: "Soluble Body",
+        rating: 3.5,
+        num: 311,
+   },
+	slimeimmunity:{
+		onSetStatus(status, target, source, effect) {
+            if ((effect as Move)?.status) {
+                this.add('-immune', target, '[from] ability: Slime Immunity');
+            }
+            return false;
+        },
+        onTryAddVolatile(status, target) {
+            if (status.id === 'yawn') {
+                this.add('-immune', target, '[from] ability: Slime Immunity');
+                return null;
+            }
+        },
+        flags: {breakable: 1},
+        name: "Slime Immunity",
+        rating: 3.5,
+        num: 312,
+   },
+   huntersfangs: {
+        onBasePowerPriority: 19,
+        onBasePower(basePower, attacker, defender, move) {
+            if (move.flags['bite']) {
+                return this.chainModify(1.5);
+            }
+        },
+        onSourceDamagingHit(damage, target, source, move) {
+
+            if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+            if (move.flags['bite']) {
+                if (this.randomChance(2, 10)) {
+                    target.trySetStatus('psn', source);
+                }
+            }
+        },
+        flags: {},
+        name: "Hunter's Fangs",
+        rating: 3.5,
+        num: 313,
+ },
+	fairfight:{
+		onStart(pokemon) {
+            for (const target of pokemon.foes()) {
+                for (const moveSlot of target.moveSlots) {
+                    const move = this.dex.moves.get(moveSlot.move);
+                    if (move.category === 'Status') continue;
+                    const moveType = move.id === 'hiddenpower' ? target.hpType : move.type;
+                    if (
+                        this.dex.getImmunity(moveType, pokemon) && this.dex.getEffectiveness(moveType, pokemon) > 0 ||
+                        move.ohko
+                    ) {
+                        this.add('-ability', pokemon, 'Anticipation');
+                        this.boost({atk: 1}, pokemon);
+                        return;
+                    }
+                }
+            }
+        },
+        flags: {},
+        name: "Fair Fight",
+        rating: 3.5,
+        num: 314,
+   },
+ royalprivileges: {
+
+        onModifyPriority(priority, pokemon, target, move) {
+            if ((move?.type === 'Grass'|| move?.type === 'Dragon') && move.basePower <= 80) return priority + 1;
+        },
+        flags: {},
+        name: "Royal Privileges",
+        rating: 1.5,
+        num: 315,
+ },
+   dualstrikes: {
+        onPrepareHit(source, target, move) {
+            if (move.category === 'Status' || move.multihit || move.flags['noparentalbond'] || move.flags['charge'] ||
+            move.flags['futuremove'] || move.spreadHit || move.isZ || move.isMax) return;
+            move.multihit = 2;
+            move.multihitType = 'parentalbond';
+        },
+        // Damage modifier implemented in BattleActions#modifyDamage()
+        onSourceModifySecondaries(secondaries, target, source, move) {
+            if (move.multihitType === 'parentalbond' && move.id === 'secretpower' && move.hit < 2) {
+                // hack to prevent accidentally suppressing King's Rock/Razor Fang
+                return secondaries.filter(effect => effect.volatileStatus === 'flinch');
+            }
+        },
+        flags: {},
+        name: "Dual Strikes",
+        rating: 4.5,
+        num: 316,
+  },
+  Duelist: {
+        onBasePowerPriority: 21,
+        onBasePower(basePower, pokemon) {
+            let boosted = true;
+            for (const target of this.getAllActive()) {
+                if (target === pokemon) continue;
+                if (target.newlySwitched || this.queue.willMove(target)) {
+                    boosted = true;
+                    break;
+                }
+            }
+            if (boosted) {
+                this.debug('Duelist boost');
+                return this.chainModify([5325, 4096]);
+            }
+        },
+        flags: {},
+        name: "Duelist",
+        rating: 2.5,
+        num: 317,
+    },
+    airforce: {
+        onStart(source) {
+            const side = source.isAlly(target) ? source.side.foe : source.side;
+            const Tailwind = side.sideConditions['tailwind'];
+            side.addSideCondition('tailwind', source);
+        },
+        flags: {},
+        name: "Air Force",
+        rating: 4,
+        num: 318,
+    },
+bloomingsword: {
+        onStart(pokemon) {
+            let activated = false;
+            for (const target of pokemon.adjacentFoes()) {
+                if (!activated) {
+                    this.add('-ability', pokemon, 'Intimidate', 'boost');
+                    activated = true;
+                }
+                if (target.volatiles['substitute']) {
+                    this.add('-immune', target);
+                } else {
+                    this.boost({def: -1}, target, pokemon, null, true);
+                }
+            }
+        },
+        flags: {},
+        name: "Blooming Sword",
+        rating: 3.5,
+        num: 319,
+    },
 	aerilate: {
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
