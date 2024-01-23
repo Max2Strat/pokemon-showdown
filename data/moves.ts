@@ -246,7 +246,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 16,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		secondary: null,
 		target: "normal",
 		type: "Bug",
 		contestType: "Clever",
