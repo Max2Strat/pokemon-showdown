@@ -55,7 +55,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 91,
 	},
 	solublebody: {
-		{
         onSourceModifyDamage(damage, source, target, move) {
             let mod = 1;
             if (move.type === 'Fire') mod *= 2;
