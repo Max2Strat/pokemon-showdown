@@ -109,7 +109,8 @@ export const Moves: {[moveid: string]: MoveData} = {
             boosts: {
                 def: -1,
             },
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+      },
+      flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
@@ -22257,3 +22258,4 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Electric",
 		contestType: "Cool",
 	},
+};
