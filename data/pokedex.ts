@@ -105,10 +105,10 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	charizard: {
 		num: 6,
 		name: "Charizard",
-		types: ["Fire", "Flying"],
+		types: ["Fire", "Ground"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 78, atk: 84, def: 78, spa: 109, spd: 85, spe: 100},
-		abilities: {0: "Blaze", H: "Solar Power"},
+		abilities: {0: "Sand Force", H: "Solar Power"},
 		heightm: 1.7,
 		weightkg: 90.5,
 		color: "Red",
@@ -913,7 +913,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	nidoqueen: {
 		num: 31,
 		name: "Nidoqueen",
-		types: ["Poison", "Ground"],
+		types: ["Poison", "Dragon"],
 		gender: "F",
 		baseStats: {hp: 90, atk: 92, def: 87, spa: 75, spd: 85, spe: 76},
 		abilities: {0: "Poison Point", 1: "Rivalry", H: "Sheer Force"},
@@ -956,7 +956,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	nidoking: {
 		num: 34,
 		name: "Nidoking",
-		types: ["Poison", "Ground"],
+		types: ["Poison", "Dragon"],
 		gender: "M",
 		baseStats: {hp: 81, atk: 102, def: 77, spa: 85, spd: 75, spe: 85},
 		abilities: {0: "Poison Point", 1: "Rivalry", H: "Sheer Force"},
