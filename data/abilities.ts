@@ -156,8 +156,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
         name: "Dual Strikes",
         rating: 4.5,
         num: 316,
-  },
-  Duelist: {
+   },
+   duelist: {
         onBasePowerPriority: 21,
         onBasePower(basePower, pokemon) {
             let boosted = true;
@@ -194,7 +194,7 @@ bloomingsword: {
             let activated = false;
             for (const target of pokemon.adjacentFoes()) {
                 if (!activated) {
-                    this.add('-ability', pokemon, 'Intimidate', 'boost');
+                    this.add('-ability', pokemon, 'Blooming Sword', 'boost');
                     activated = true;
                 }
                 if (target.volatiles['substitute']) {
