@@ -17597,7 +17597,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Water 2"],
    },
 	Nigiryu: {
-		num: 978,
+		num: 1010,
 		name: "Nigiryu",
 		baseForme: "Curly",
 		types: ["Dragon", "Water"],
