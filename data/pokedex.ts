@@ -11664,9 +11664,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		gen: 7,
 	},
-	greninjayon: {
+	greninjaash: {
 		num: 658,
-		name: "Greninja-Yon",
+		name: "Greninja-Ash",
 		baseSpecies: "Greninja",
 		forme: "Ash",
 		types: ["Water", "Ghost"],
