@@ -12400,7 +12400,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 704,
 		name: "Goomy",
 		types: ["Water"],
-		baseStats: {hp:605, atk: 50, def: 45, spa: 55, spd: 70, spe: 40},
+		baseStats: {hp:60, atk: 50, def: 45, spa: 55, spd: 70, spe: 40},
 		abilities: {0: "Torrent", 1: "Hydration", H: "Gooey"},
 		heightm: 0.3,
 		weightkg: 2.8,
