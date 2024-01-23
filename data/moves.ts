@@ -18,7 +18,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Electric",
 		contestType: "Cool",
 	},
-	NoBrainRush: {
+	nobrainrush: {
 		num: 920,
 		accuracy: 95,
 		basePower: 70,
@@ -35,7 +35,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Psychic",
 		contestType: "Clever",
 	},
-   DeathShot: {
+   deathshot: {
 		num: 921,
 		accuracy: 50,
 		basePower: 150,
@@ -49,7 +49,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Dark",
 		contestType: "Clever",
  },
- HonorSlash: {
+ honorslash: {
 		num: 922,
 		accuracy: 100,
       basePower: 70,
@@ -68,7 +68,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Steel",
 		contestType: "Clever",
  },
- WindyPalm: {
+ windypalm: {
 		num: 923,
 		accuracy: 100,
 		basePower: 80,
@@ -82,7 +82,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Flying",
 		contestType: "Clever",
    },
-   HunterFang: {
+   hunterfang: {
 		num: 924,
 		accuracy: 90,
 		basePower: 80,
@@ -97,7 +97,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Dragon",
 		contestType: "Clever",
    },
-   TomaHawk: {
+   tomahawk: {
 		num: 925,
 		accuracy: 100,
 		basePower: 130,
@@ -116,7 +116,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Fighting",
 		contestType: "Clever",
    },
-   ScalePiercer: {
+   scalepiercer: {
 		num: 926,
 		accuracy: 85,
 		basePower: 90,
@@ -133,7 +133,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Steel",
 		contestType: "Clever",
    },
-   ToxicSyrup: {
+   toxicsyrup: {
 		num: 927,
 		accuracy: true,
 		basePower: 0,
@@ -152,7 +152,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Poison",
 		contestType: "Clever",
    },
-   LeadersSoul: {
+   leaderssoul: {
 		num: 928,
 		accuracy: true,
 		basePower: 0,
@@ -173,7 +173,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Dragon",
 		contestType: "Clever",
    },
-   DestinyShield: {
+   destinyshield: {
 		num: 929,
 		accuracy: true,
 		basePower: 0,
@@ -230,7 +230,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Psychic",
 		contestType: "Clever",
  },
-   SharpFang: {
+   sharpfang: {
 		num: 930,
 		accuracy: 90,
       basePower: 0,
