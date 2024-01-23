@@ -242,7 +242,7 @@ export const Moves: {[moveid: string]: MoveData} = {
             status: 'par',
         },
 		category: "Physical",
-		name: "Leader's Soul",
+		name: "Sharp Fang",
 		pp: 16,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
