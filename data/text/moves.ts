@@ -26,6 +26,53 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "No additional effect.",
 		shortDesc: "Usually goes first.",
 	},
+	windypalm: {
+		name: "Windy Palm",
+		desc: "No additional effect.",
+		shortDesc: "Usually goes first.",
+	},
+	toxicsyrup: {
+		name: "Toxic Syrup",
+		desc: "The user restores 1/2 of its maximum HP, rounded half up. Poisoned the user.",
+	},
+	tomahawk: {
+		name: "Toma-Hawk",
+		desc: "Lower the user's defense by 1 stage.",
+},
+	honorslash: {
+		name: "Honor Slash",
+		desc: "Power doubles if the target has more than or equal to half of its maximum HP remaining.",
+},
+	hunterfang: {
+		name: "Hunter Fang",
+		desc: "No additional effect.",
+},
+	destinyshield: {
+		name: "Destiny Shield",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user have their Special Attack lowered by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "Protects from damaging attacks. Contact: -1 Spa.",
+},
+	leaderssoul: {
+		name: "Leader's Soul",
+		desc: "Raise all stats by 1 stage.",
+},
+	deathshot: {
+		name: "Death Shot",
+		desc: "No additional effect.",
+},
+	nobrainrush: {
+		name: "No Brain Rush",
+		desc: "Has a 20% chance to confuse the target.",
+},
+	scalepiercer: {
+		name: "Scale-Piercer",
+		desc: "This move's type effectiveness against Dragon is changed to be super effective no matter what this move's type is.",
+      shortdesct: "Super effective on Dragon"
+},
+	sharpfang: {
+		name: "Sharp Fang",
+		desc: "Takes half of the target's life. 30% chance to paralyse the target.",
+	},
 	acid: {
 		name: "Acid",
 		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
