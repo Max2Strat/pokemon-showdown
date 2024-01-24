@@ -21,7 +21,7 @@
  *   - EVs (84 per stat, for +21 to each)
  *   - Nature (always Quirky, which has no effect)
  *   - Happiness (there are no Happiness-based moves in Gen IX)
- *
+ * yo
  * Currently, leveling is based on a Pokémon's position within Smogon's usage-based tiers,
  * but an automatic leveling system is planned for the future. This would involve storing win and loss
  * data by Pokémon species in a database, and increasing and decreasing the levels of Pokémon species
