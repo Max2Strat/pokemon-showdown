@@ -31,7 +31,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	bulbasaur: {
 		learnset: {
-			acidspray: ["9M"],
+			acidspray: ["8M"],
 			amnesia: ["8M", "7E", "6E", "5E", "4E"],
 			attract: ["8M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			bide: ["7V"],
@@ -72,7 +72,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			knockoff: ["9M", "7T", "6T", "5T", "4T"],
 			leafstorm: ["9M", "8M", "7E", "6E", "5E", "4E"],
 			leechseed: ["9L9", "8L9", "8V", "7L7", "7V", "6L7", "6S4", "5L7", "5S2", "4L7", "3L7", "3S1"],
-			lightscreen: ["8M", "8V", "7M", "7V", "6M", "5M", "4E", "3E"],
+			lightscreen: ["9M", "8V", "7M", "7V", "6M", "5M", "4E", "3E"],
 			magicalleaf: ["9M", "8M", "7E", "6E", "5E", "4E", "3E"],
 			megadrain: ["8V", "7V"],
 			mimic: ["7V", "3T"],
