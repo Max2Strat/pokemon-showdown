@@ -262,8 +262,29 @@ desert: {
 		flags: {},
 		name: "Snow Blessing",
 		rating: 4,
-		num: 117,
-},
+		num: 325,
+	},
+	mystory: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'My Story', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({atk: -2}, target, pokemon, null, true);
+               this.boost({spa: -2}, target, pokemon, null, true);
+				}
+			}
+		},
+      flags: {},
+		name: "My Story",
+		rating: 4,
+		num: 326,
+	},
    dualstrikes: {
         onPrepareHit(source, target, move) {
             if (move.category === 'Status' || move.multihit || move.flags['noparentalbond'] || move.flags['charge'] ||
