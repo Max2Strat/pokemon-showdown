@@ -82,7 +82,7 @@ desert: {
 		flags: {},
 		name: "Desert",
 		rating: 4,
-		num: 45,
+		num: 321,
 	},
 	solublebody: {
         onSourceModifyDamage(damage, source, target, move) {
@@ -95,7 +95,20 @@ desert: {
         name: "Soluble Body",
         rating: 3.5,
         num: 311,
-   },
+},
+	bull: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.recoil || move.hasCrashDamage) {
+				this.debug('Bull boost');
+				return this.chainModify([1.5]);
+			}
+		},
+		flags: {},
+		name: "Bull",
+		rating: 3,
+		num: 322,
+	},
 	slimeimmunity:{
 		onSetStatus(status, target, source, effect) {
             if ((effect as Move)?.status) {
