@@ -180,6 +180,25 @@ desert: {
         name: "Royal Privileges",
         rating: 1.5,
         num: 315,
+},
+	absolutepitch: {
+		onBasePowerPriority: 7,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['sound']) {
+				this.debug('Absolute Pitch boost');
+				return this.chainModify([2]);
+			}
+		},
+		onSourceModifyDamage(damage, source, target, move) {
+			if (move.flags['sound']) {
+				this.debug('Absolute Pitch weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		flags: {breakable: 1},
+		name: "Absolute Pitch",
+		rating: 3.5,
+		num: 323,
  },
    dualstrikes: {
         onPrepareHit(source, target, move) {
