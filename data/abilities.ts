@@ -239,12 +239,6 @@ desert: {
 		rating: 4,
 		num: 324,
 },
-	temporallaw: 
-		flags: {},
-		name: "Temporal Law",
-		rating: 4.5,
-		num: 144,
-	},
    dualstrikes: {
         onPrepareHit(source, target, move) {
             if (move.category === 'Status' || move.multihit || move.flags['noparentalbond'] || move.flags['charge'] ||
