@@ -9102,10 +9102,10 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	serperior: {
 		num: 497,
 		name: "Serperior",
-		types: ["Grass"],
+		types: ["Grass", "Dragon"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 80, atk: 95, def: 75, spa: 95, spd: 75, spe: 113},
-		abilities: {0: "Overgrow", H: "Contrary"},
+		abilities: {0: "Overgrow", 1: "Contrary", H: "Royal Privileges" },
 		heightm: 3.3,
 		weightkg: 63,
 		color: "Green",
