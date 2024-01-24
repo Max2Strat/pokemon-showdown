@@ -285,6 +285,72 @@ desert: {
 		rating: 4,
 		num: 326,
 	},
+	chapterone: {
+		onStart(pokemon) {
+			if (pokemon.swordBoost) return;
+			pokemon.swordBoost = true;
+			this.boost({spa: 2}, pokemon);
+		},
+		flags: {},
+		name: "Chapter One",
+		rating: 4,
+		num: 327,
+	},
+	chaptertwo: {
+		onStart(pokemon) {
+			if (pokemon.swordBoost) return;
+			pokemon.swordBoost = true;
+			this.boost({def: 2}, pokemon);
+		},
+		flags: {},
+		name: "Chapter Two",
+		rating: 4,
+		num: 328,
+},
+	chapterthree: {
+		onStart(pokemon) {
+			if (pokemon.swordBoost) return;
+			pokemon.swordBoost = true;
+			this.boost({atk: 2}, pokemon);
+		},
+		flags: {},
+		name: "Chapter Three",
+		rating: 4,
+		num: 329,
+},
+	chapterfour: {
+		onStart(pokemon) {
+			if (pokemon.swordBoost) return;
+			pokemon.swordBoost = true;
+			this.boost({spe: 2}, pokemon);
+		},
+		flags: {},
+		name: "Chapter Four",
+		rating: 4,
+		num: 330,
+},
+	chapterfive: {
+		onStart(pokemon) {
+			if (pokemon.swordBoost) return;
+			pokemon.swordBoost = true;
+			this.boost({spd: 2}, pokemon);
+		},
+		flags: {},
+		name: "Chapter Five",
+		rating: 4,
+		num: 331,
+},
+	lastchapter: {
+		onStart(pokemon) {
+			if (pokemon.swordBoost) return;
+			pokemon.swordBoost = true;
+			this.boost({allstats: 2}, pokemon);
+		},
+		flags: {},
+		name: "Last Chapter",
+		rating: 4,
+		num: 331,
+	},
    dualstrikes: {
         onPrepareHit(source, target, move) {
             if (move.category === 'Status' || move.multihit || move.flags['noparentalbond'] || move.flags['charge'] ||
