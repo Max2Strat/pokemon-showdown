@@ -102,11 +102,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Rising Sun",
 		pp: 1,
 		priority: 5,
-      onHit(pokemon) {
-			const success = !!this.heal(this.modify(pokemon.maxhp));
-			return pokemon.cureStatus() || success;
-		},
-
+    onHit(target, source, move) {
+this.heal(target.maxhp);
+}, 
 		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
       heal: [2],
 		secondary: null,
