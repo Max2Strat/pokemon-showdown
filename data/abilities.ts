@@ -238,6 +238,31 @@ desert: {
 		name: "Dimension of the Braves",
 		rating: 4,
 		num: 324,
+	},
+	snowblessing: {
+		onStart(source) {
+			this.field.setWeather('snow');
+		},
+		onModifySpe(spe, pokemon) {
+			if (this.field.isWeather(['hail', 'snow'])) {
+				return this.chainModify(2);
+			}
+		},
+		onImmunity(type, pokemon) {
+			if (type === 'hail') return false;
+		},
+		onModifyAccuracyPriority: -1,
+		onModifyAccuracy(accuracy) {
+			if (typeof accuracy !== 'number') return;
+			if (this.field.isWeather(['hail', 'snow'])) {
+				this.debug('Snow Cloak - decreasing accuracy');
+				return this.chainModify([3277, 4096]);
+			}
+		},
+		flags: {},
+		name: "Snow Blessing",
+		rating: 4,
+		num: 117,
 },
    dualstrikes: {
         onPrepareHit(source, target, move) {
