@@ -200,17 +200,20 @@ desert: {
 		rating: 3.5,
 		num: 323,
 },
-	dimensionofthebrave: {
+	dimensionofthebraves: {
 		onStart(source) {
 			this.field.setTerrain('psychicterrain');
 		},
+		{
 		onDamage(damage, target, source, effect) {
-			if (effect.effectType === "Move" &&!effect.multihit &&
+			if (
+				effect.effectType === "Move" &&
+				!effect.multihit &&
 				(!effect.negateSecondary && !(effect.hasSheerForce && source.hasAbility('sheerforce')))
 			) {
-				this.effectState.checkedBerserk = false;
+				this.effectState.checkedDimensionoftheBraves = false;
 			} else {
-				this.effectState.checkedBerserk = true;
+				this.effectState.checkedDimensionoftheBraves = true;
 			}
 		},
 		onTryEatItem(item) {
@@ -218,12 +221,12 @@ desert: {
 				'aguavberry', 'enigmaberry', 'figyberry', 'iapapaberry', 'magoberry', 'sitrusberry', 'wikiberry', 'oranberry', 'berryjuice',
 			];
 			if (healingItems.includes(item.id)) {
-				return this.effectState.checkedBerserk;
+				return this.effectState.checkedDimensionoftheBraves;
 			}
 			return true;
 		},
 		onAfterMoveSecondary(target, source, move) {
-			this.effectState.checkedBerserk = true;
+			this.effectState.checkedDimensionoftheBraves = true;
 			if (!source || source === target || !target.hp || !move.totalDamage) return;
 			const lastAttackedBy = target.getLastAttackedBy();
 			if (!lastAttackedBy) return;
@@ -231,6 +234,7 @@ desert: {
 			if (target.hp <= target.maxhp / 2 && target.hp + damage > target.maxhp / 2) {
 				this.boost({def: 1}, target, target);
 			}
+		},
 		flags: {},
 		name: "Dimension of the Braves",
 		rating: 4,
