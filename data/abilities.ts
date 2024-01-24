@@ -204,7 +204,7 @@ desert: {
 		onStart(source) {
 			this.field.setTerrain('psychicterrain');
 		},
-		(pokemon) {
+{
 			if (pokemon.shieldBoost) return;
 			pokemon.shieldBoost = true;
 			this.boost({def: 1}, pokemon);
