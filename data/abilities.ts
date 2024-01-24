@@ -199,7 +199,21 @@ desert: {
 		name: "Absolute Pitch",
 		rating: 3.5,
 		num: 323,
- },
+},
+	dimensionofthebrave: {
+		onStart(source) {
+			this.field.setTerrain('psychicterrain');
+		},
+		onStart(pokemon) {
+			if (pokemon.shieldBoost) return;
+			pokemon.shieldBoost = true;
+			this.boost({def: 1}, pokemon);
+		},
+		flags: {},
+		name: "Dimension of the Braves",
+		rating: 4,
+		num: 324,
+	},
    dualstrikes: {
         onPrepareHit(source, target, move) {
             if (move.category === 'Status' || move.multihit || move.flags['noparentalbond'] || move.flags['charge'] ||
