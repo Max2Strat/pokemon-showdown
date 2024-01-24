@@ -257,9 +257,8 @@ desert: {
 			const lastAttackedBy = target.getLastAttackedBy();
 			if (!lastAttackedBy) return;
 			const damage = move.multihit ? move.totalDamage : lastAttackedBy.damage;
-			if (target.hp <= target.maxhp / 2 && target.hp + damage > target.maxhp / 2) {
-				pokemon.heal(pokemon.baseMaxhp / 2);
-			}
+			if (target.hp <= target.maxhp / 2 && target.hp + damage > target.maxhp / 2) (pokemon) {
+			pokemon.heal(pokemon.baseMaxhp / 3);
 		},
 		flags: {},
 		name: "Temporal Law",
