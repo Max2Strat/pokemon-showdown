@@ -11737,7 +11737,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Talonflame",
 		types: ["Fire", "Steel"],
 		baseStats: {hp: 78, atk: 125, def: 110, spa: 74, spd: 75, spe: 110},
-		abilities: {0: "Flame Body", H: "Supreme Overlord"},
+		abilities: {0: "Flame Body", 1: "Duelist", H: "Supreme Overlord"},
 		heightm: 1.2,
 		weightkg: 24.5,
 		color: "Red",
