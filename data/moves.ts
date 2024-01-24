@@ -17,6 +17,22 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
+},
+	marvelouswind: {
+		num: 932,
+		accuracy: 85,
+		basePower: 100,
+		category: "Special",
+		name: "Hurricane",
+		pp: 10,
+      secondary: {
+            chance: 100,
+            volatileStatus: 'confusion',
+        },
+		target: "normal",
+		type: "Flying",
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1, wind: 1},
 	},
 	nobrainrush: {
 		num: 920,
