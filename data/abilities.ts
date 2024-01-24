@@ -344,7 +344,7 @@ desert: {
 		onStart(pokemon) {
 			if (pokemon.swordBoost) return;
 			pokemon.swordBoost = true;
-			this.boost({allstats: 2}, pokemon);
+			this.boost({def: 2, spe: 2, atk: 2, spa: 2, spd: 2, evs: 2}, pokemon);
 		},
 		flags: {},
 		name: "Last Chapter",
