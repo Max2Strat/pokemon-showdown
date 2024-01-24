@@ -95,7 +95,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		contestType: "Clever",
 },
 	risingsun: {
-		num: 935,
+		num: 936,
 		accuracy: true,
 		category: "Status",
       basePower: 0,
@@ -113,6 +113,25 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "self",
 		type: "Fairy",
 		contestType: "Clever",
+},
+	fatalscythe: {
+		num: 937,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Fatal Scythe",
+		pp: 10,
+      multihit: [2],
+     secondary: {
+			chance: 30,
+			boosts: {
+				def: -1,
+			},
+		},
+		target: "normal",
+		type: "Dark",
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1},
 	},
    deathshot: {
 		num: 921,
