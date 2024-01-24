@@ -54,6 +54,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: 91,
 	},
+fog: {
+		onStart(pokemon) {
+			if (pokemon.swordBoost) return;
+			pokemon.swordBoost = true;
+			this.boost({evasion: 1}, pokemon);
+		},
+		flags: {},
+		name: "Fog",
+		rating: 4,
+		num: 320,
+	},
 	solublebody: {
         onSourceModifyDamage(damage, source, target, move) {
             let mod = 1;
