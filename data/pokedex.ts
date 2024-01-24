@@ -11416,7 +11416,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseForme: "Aria",
 		types: ["Grass", "Psychic"],
 		gender: "N",
-		baseStats: {hp: 100, atk: 77, def: 80, spa: 128, spd: 128, spe: 100},
+		baseStats: {hp: 130, atk: 77, def: 80, spa: 128, spd: 128, spe: 100},
 		abilities: {0: "Grassy Surge"},
 		heightm: 0.6,
 		weightkg: 6.5,
