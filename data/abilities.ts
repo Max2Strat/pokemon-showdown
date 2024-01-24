@@ -204,7 +204,6 @@ desert: {
 		onStart(source) {
 			this.field.setTerrain('psychicterrain');
 		},
-		{
 		onDamage(damage, target, source, effect) {
 			if (
 				effect.effectType === "Move" &&
