@@ -105,7 +105,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
       heal: [2],
 		secondary: null,
-		target: "normal",
+		target: "self",
 		type: "Fairy",
 		contestType: "Clever",
 	},
