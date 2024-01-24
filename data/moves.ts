@@ -23,7 +23,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 85,
 		basePower: 100,
 		category: "Special",
-		name: "Hurricane",
+		name: "Marvelous Wind",
 		pp: 10,
       secondary: {
             chance: 100,
