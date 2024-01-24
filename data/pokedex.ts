@@ -3154,7 +3154,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Galar",
 		types: ["Psychic", "Flying"],
 		gender: "N",
-		baseStats: {hp: 90, atk: 85, def: 85, spa: 125, spd: 100, spe: 95},
+		baseStats: {hp: 90, atk: 85, def: 85, spa: 125, spd: 100, spe: 125},
 		abilities: {0: "Competitive"},
 		heightm: 1.7,
 		weightkg: 50.9,
