@@ -238,6 +238,33 @@ desert: {
 		name: "Dimension of the Braves",
 		rating: 4,
 		num: 324,
+},
+	temporallaw: {
+	onDamage(damage, target, source, effect) {
+			if (
+				effect.effectType === "Move" &&
+				!effect.multihit &&
+				(!effect.negateSecondary && !(effect.hasSheerForce && source.hasAbility('sheerforce')))
+			) {
+				this.effectState.checkedTemporalLaw = false;
+			} else {
+				this.effectState.checkedTemporalLaw = true;
+			}
+		},	
+	onAfterMoveSecondary(target, source, move) {
+			this.effectState.checkedDimensionoftheBraves = true;
+			if (!source || source === target || !target.hp || !move.totalDamage) return;
+			const lastAttackedBy = target.getLastAttackedBy();
+			if (!lastAttackedBy) return;
+			const damage = move.multihit ? move.totalDamage : lastAttackedBy.damage;
+			if (target.hp <= target.maxhp / 2 && target.hp + damage > target.maxhp / 2) {
+				pokemon.heal(pokemon.baseMaxhp / 2);
+			}
+		},
+		flags: {},
+		name: "Temporal Law",
+		rating: 4.5,
+		num: 144,
 	},
    dualstrikes: {
         onPrepareHit(source, target, move) {
