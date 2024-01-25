@@ -22590,7 +22590,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			surf: ["9L50", "8M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			swagger: ["7M", "7V", "6M", "5M", "4M", "3T"],
 			swift: ["9M", "8M", "7V", "4T", "3T"],
-			tailglow: ["9L65"]
+			tailglow: ["9L65"],
 			takedown: ["9M", "7V"],
 			terablast: ["9M"],
 			thunder: ["9M", "8M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
