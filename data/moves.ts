@@ -184,7 +184,7 @@ this.heal(target.maxhp);
 		num: 923,
 		accuracy: 100,
 		basePower: 80,
-		category: "Physical",
+		category: "Special",
 		name: "Windy Palm",
 		pp: 24,
 		priority: 2,
