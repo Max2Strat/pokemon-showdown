@@ -86,6 +86,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		category: "Special",
 		name: "Lunar Eclipse",
 		pp: 1,
+      noPPBoosts: true,
       ohko: true,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
@@ -101,6 +102,7 @@ export const Moves: {[moveid: string]: MoveData} = {
       basePower: 0,
 		name: "Rising Sun",
 		pp: 1,
+      noPPBoosts: true,
 		priority: 5,
     onHit(target, source, move) {
 this.heal(target.maxhp);
@@ -244,24 +246,24 @@ this.heal(target.maxhp);
 		type: "Steel",
 		contestType: "Clever",
    },
-   toxicsyrup: {
-		num: 927,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Toxic Syrup",
-		pp: 16,
+  toxicsyrup: {
+        num: 927,
+        accuracy: true,
+        basePower: 0,
+        category: "Status",
+        name: "Toxic Syrup",
+        pp: 10,
       onHit(target, source, move) {
             const result = target.setStatus('tox', source, move);
             if (!result) return result;
         },
       heal: [1, 2],
-		priority: 0,
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		secondary: null,
-		target: "self",
-		type: "Poison",
-		contestType: "Clever",
+        priority: 0,
+        flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+        secondary: null,
+        target: "self",
+        type: "Poison",
+        contestType: "Clever",
    },
    leaderssoul: {
 		num: 928,
@@ -270,6 +272,7 @@ this.heal(target.maxhp);
 		category: "Status",
 		name: "Leader's Soul",
 		pp: 1,
+      noPPBoosts: true,
 		priority: 0,
       boosts: {
             atk: 1,
