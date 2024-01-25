@@ -47097,7 +47097,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			captivate: ["4M"],
 			coaching: ["9M"],
 			confide: ["7M", "6M"],
-			confusion: ["9L18"]
+			confusion: ["9L18"],
 			covet: ["7T", "6T", "5T"],
 			cut: ["6M", "5M", "4M"],
 			dig: ["9M", "6M", "5M", "4M"],
