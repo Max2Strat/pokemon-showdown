@@ -37342,7 +37342,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			teeterdance: ["3S0"],
 			thunder: ["9L44"],
 			thunderbolt: ["9L34"],
-			thunderpunch: ["9L20"]
+			thunderpunch: ["9L20"],
 			thundershock: ["9L4"],
 			thunderwave: ["9L13"],
 			voltswitch: ["9M"],
