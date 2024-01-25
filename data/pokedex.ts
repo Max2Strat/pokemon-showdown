@@ -3451,7 +3451,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Feraligatr",
 		types: ["Water", "Dragon"],
 		genderRatio: {M: 0.875, F: 0.125},
-		baseStats: {hp: 85, atk: 125, def: 100, spa: 79, spd: 68, spe: 98},
+		baseStats: {hp: 85, atk: 120, def: 100, spa: 79, spd: 68, spe: 98},
 		abilities: {0: "Torrent", 1: "Sheer Force", H: "Hunter's Fang"},
 		heightm: 2.3,
 		weightkg: 88.8,
