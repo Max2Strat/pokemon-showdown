@@ -11417,7 +11417,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Grass", "Psychic"],
 		gender: "N",
 		baseStats: {hp: 110, atk: 77, def: 80, spa: 128, spd: 128, spe: 100},
-		abilities: {0: "Grassy Surge"},
+		abilities: {0: "Absolute Pitch"},
 		heightm: 0.6,
 		weightkg: 6.5,
 		color: "White",
