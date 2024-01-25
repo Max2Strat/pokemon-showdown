@@ -26446,7 +26446,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			icepunch: ["9M", "8M", "7T", "7V", "6T", "5T", "4T", "3T"],
 			irondefense: ["9M", "8M"],
 			leafstorm: ["9M"],
-			leechseed: ["9L24"]
+			leechseed: ["9L24"],
 			lowkick: ["9M", "9L36", "8M", "8L36", "7T", "7L1", "7V", "6T", "6L1", "5T", "5L1", "4T", "4L1", "3L17"],
 			lowsweep: ["9M"],
 			megakick: ["8M", "3T"],
@@ -32884,7 +32884,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			laserfocus: ["7T"],
 			lightscreen: ["9M", "8M", "7M", "6M", "5M", "4M", "3M"],
 			liquidation: ["9M"],
-			lunareclipse: ["9L90"]
+			lunareclipse: ["9L90"],
 			mimic: ["3T"],
 			mist: ["9L9", "8L9"],
 			mudslap: ["7V", "4T", "3T"],
@@ -33035,7 +33035,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			reflect: ["9M", "8M", "7M", "6M", "5M", "4M", "3M"],
 			rest: ["9M", "8M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			return: ["7M", "7V", "6M", "5M", "4M", "3M"],
-			risingsun: ["9L90"]
+			risingsun: ["9L90"],
 			roar: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			rocksmash: ["7V", "6M", "5M", "4M", "3M"],
 			roost: ["7M", "6M", "5T", "4M"],
@@ -33768,9 +33768,9 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			doubleedge: ["9M", "3T"],
 			doublekick: ["9L1", "8L1", "7L1", "6L16", "5L16", "4L16", "3L16"],
 			doubleteam: ["7M", "6M", "5M", "4M", "3M"],
-			dragonbrawl: ["9M"]
-			dragonclaw: ["9M"]
-			dragondance: ["9M"]
+			dragonbrawl: ["9M"],
+			dragonclaw: ["9M"],
+			dragondance: ["9M"],
 			dualchop: ["7T", "6T", "5T"],
 			dynamicpunch: ["3T"],
 			earthquake: ["9M", "8M", "7M", "6M", "5M", "4M", "3M"],
@@ -34080,8 +34080,8 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			dive: ["8M", "6M", "5M", "4T", "3M"],
 			doubleedge: ["9M", "3T"],
 			doubleteam: ["7M", "6M", "5M", "4M", "3M"],
-			dragonbrawl: ["9M"]
-			dragonclaw: ["9M"]
+			dragonbrawl: ["9M"],
+			dragonclaw: ["9M"],
 			dynamicpunch: ["3T"],
 			earthpower: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			earthquake: ["9M", "9L1", "8M", "8L1", "7M", "7L51", "6M", "6L51", "5M", "5L52", "5S0", "4M", "4L52", "3M", "3L52"],
@@ -37399,7 +37399,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			mimic: ["3T"],
 			mudslap: ["4T", "3T"],
 			naturalgift: ["4M"],
-			overdrive: ["9L26"]
+			overdrive: ["9L26"],
 			overheat: ["8M", "7M", "6M", "5M", "4M", "3M"],
 			pound: ["8L1", "7L1", "6L1", "5L1", "4L1", "3L1"],
 			poweruppunch: ["6M"],
@@ -37435,7 +37435,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			taunt: ["8M", "7M", "6M", "5M", "4M", "3M"],
 			thunder: ["9L44"],
 			thunderbolt: ["9L34"],
-			thunderpunch: ["9L20"]
+			thunderpunch: ["9L20"],
 			thundershock: ["9L4"],
 			thunderwave: ["9L13"],
 			voltswitch: ["9M"],
@@ -37502,7 +37502,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			mudslap: ["4T", "3T"],
 			naturalgift: ["4M"],
 			outrage: ["8M", "7T", "6T", "5T", "4T"],
-			overdrive: ["9L26"]
+			overdrive: ["9L26"],
 			overheat: ["8M", "7M", "6M", "5M", "4M", "3M"],
 			pound: ["8L1", "7L1", "6L1", "5L1", "4L1", "3L1"],
 			poweruppunch: ["6M"],
@@ -37542,7 +37542,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			thunderfang: ["8M", "8L1", "7L1", "6L1", "5L1", "4L1"],
 			thunder: ["9L44"],
 			thunderbolt: ["9L34"],
-			thunderpunch: ["9L20"]
+			thunderpunch: ["9L20"],
 			thundershock: ["9L4"],
 			thunderwave: ["9L13"],
 			voltswitch: ["9M"],
@@ -39030,7 +39030,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			mudslap: ["4T", "3T"],
 			naturalgift: ["4M"],
 			odorsleuth: ["7L16", "6L16", "5L25", "4L25", "3L25"],
-			outrage: ["9M"]
+			outrage: ["9M"],
 			overheat: ["8M", "7M", "6M", "6S1", "5M", "4M"],
 			protect: ["8M", "7M", "6M", "6S1", "5M", "4M", "3M"],
 			psychicfangs: ["8M"],
@@ -41049,7 +41049,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			poweruppunch: ["6M"],
 			protect: ["9M", "8M", "7M", "6M", "5M", "4M", "3M"],
 			psychicnoise: ["9M"],
-			quiverdance: ["9L45"]
+			quiverdance: ["9L45"],
 			rest: ["9M", "8M", "7M", "6M", "5M", "4M", "3M"],
 			return: ["7M", "6M", "5M", "4M", "3M"],
 			rockslide: ["9M", "8M", "7M", "7L15", "6M", "6L15", "5M", "5L25", "4M", "3T"],
@@ -42921,7 +42921,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			brine: ["8M"],
 			brutalswing: ["8M", "7M"],
 			bulldoze: ["9M", "8M", "7M", "6M", "5M"],
-			calmmind: ["9M"]
+			calmmind: ["9M"],
 			captivate: ["7L21", "6L24", "5L25", "4M", "4L25"],
 			coil: ["9L48", "8L48", "7L41", "6L44"],
 			confide: ["7M", "6M"],
@@ -42930,7 +42930,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			dive: ["8M", "6M", "5M", "4T", "3M"],
 			doubleedge: ["9M", "3T"],
 			doubleteam: ["7M", "6M", "5M", "4M", "3M"],
-			dracometeor: ["9L52"]
+			dracometeor: ["9L52"],
 			dragoncheer: ["9M"],
 			dragondance: ["9M", "8M"],
 			dragonpulse: ["9M", "8M", "7T", "6T", "5T", "4M"],
@@ -42959,7 +42959,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			magiccoat: ["7T", "6T", "5T", "4T"],
 			mimic: ["3T"],
 			mirrorcoat: ["5S3"],
-			moonblast: ["9L40"]
+			moonblast: ["9L40"],
 			mudshot: ["9M", "8M"],
 			mudslap: ["4T", "3T"],
 			naturalgift: ["4M"],
@@ -48336,7 +48336,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			leer: ["9L1", "7L1", "6L1", "5L1", "4L1"],
 			mudslap: ["9M", "4T"],
 			naturalgift: ["4M"],
-			nobrainrush: ["9L1"]
+			nobrainrush: ["9L1"],
 			outrage: ["9M", "7T", "6T", "5T", "4T"],
 			painsplit: ["7T", "6T", "5T", "4T"],
 			psychic: ["9L34"],
@@ -49187,7 +49187,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			rocksmash: ["6M", "5M", "4M"],
 			rocktomb: ["9M", "7M", "6M", "5M", "4M"],
 			round: ["7M", "6M", "5M"],
-			scaleshot: ["9L37"]
+			scaleshot: ["9L37"],
 			scaryface: ["9M"],
 			secretpower: ["6M", "4M"],
 			sleeptalk: ["9M", "7M", "6M", "5T", "4M"],
@@ -49252,7 +49252,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			secretpower: ["6M", "4M"],
 			seedbomb: ["8M", "7T", "7E", "6T", "6E", "5T", "5E", "4T"],
 			sleeptalk: ["8M", "7M", "6M", "5T", "4M"],
-			sludge: ["9L12"]
+			sludge: ["9L12"],
 			sludgebomb: ["9L26", "8M", "8V", "7M", "6M", "5M", "4M", "3M"],
 			sludgewave: ["9L36", "8M"],
 			smog: ["9L7", "8E", "8V", "7E", "6E", "5E"],
@@ -49311,7 +49311,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			secretpower: ["6M", "4M"],
 			seedbomb: ["8M", "7T", "6T", "5T", "4T"],
 			sleeptalk: ["8M", "7M", "6M", "5T", "4M"],
-			sludge: ["9L12"]
+			sludge: ["9L12"],
 			sludgebomb: ["9L26", "8M", "8V", "7M", "6M", "5M", "4M", "3M"],
 			sludgewave: ["9L36", "8M"],
 			smog: ["9L7", "8E", "8V", "7E", "6E", "5E"],
@@ -50834,7 +50834,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			helpinghand: ["9M"],
 			hiddenpower: ["7M", "6M", "5M", "4M"],
 			honeclaws: ["6M", "5M"],
-			honorslash: ["9M"]
+			honorslash: ["9M"],
 			hyperbeam: ["9M", "8M", "7M", "6M", "5M", "4M"],
 			incinerate: ["6M", "5M"],
 			ironhead: ["9M", "8M", "7T", "6T", "5T", "4T"],
@@ -54016,7 +54016,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			dracometeor: ["9M"]
 			dragonbreath: ["8L18", "7E", "7V", "6E", "5E", "4E", "3E"],
 			dragondance: ["8L42"],
-			dragondarts: ["9L50"]
+			dragondarts: ["9L50"],
 			dragonpulse: ["8L33", "8V", "7T", "6T", "5T", "4M"],
 			dragonrage: ["7M"],
 			dragontail: ["9M", "7M", "6M", "5M"],
@@ -57287,7 +57287,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			grassknot: ["8M", "7M", "6M", "5M"],
 			helpinghand: ["8M", "7T", "6T", "5T"],
 			hiddenpower: ["7M", "6M", "5M"],
-			iciclecrash: ["8M"]
+			iciclecrash: ["8M"],
 			icepunch: ["8M", "7T", "6T", "5T"],
 			iceshard: ["8L31"],
 			icespinner: ["8L42"],
@@ -58028,7 +58028,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			growth: ["9L1"],
 			helpinghand: ["9M", "9L1"],
 			hyperbeam: ["9M"],
-			iciclecrash: ["8M"]
+			iciclecrash: ["8M"],
 			icepunch: ["8M"],
 			iceshard: ["8L26"],
 			icespinner: ["8L35"],
@@ -64186,7 +64186,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			hiddenpower: ["7M", "6M", "5M"],
 			highjumpkick: ["9L66", "8L66", "7L56", "7S0", "6L56", "5L56"],
 			honeclaws: ["9L29", "8L40"],
-			hurricane: ["9L40"]
+			hurricane: ["9L40"],
 			hyperbeam: ["9M", "8M", "7M", "6M", "5M"],
 			icespinner: ["9M"],
 			jumpkick: ["7L37", "6L37", "5L37"],
@@ -83881,7 +83881,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			endure: ["9M", "8M"],
 			expandingforce: ["9M", "8T"],
 			facade: ["9M", "8M"],
-			flashcannon: ["9L27"]
+			flashcannon: ["9L27"],
 			futuresight: ["9M"],
 			gigadrain: ["9M", "8M"],
 			healingwish: ["9L51", "8L51"],
@@ -83934,7 +83934,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			endure: ["9M", "8M"],
 			expandingforce: ["9M", "8T"],
 			facade: ["9M", "8M"],
-			flashcannon: ["9L27"]
+			flashcannon: ["9L27"],
 			futuresight: ["9M"],
 			gigadrain: ["9M", "8M"],
 			healingwish: ["9L51", "8L51"],
