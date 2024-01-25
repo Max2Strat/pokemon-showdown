@@ -19953,8 +19953,8 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			icywind: ["9M", "8M", "7T", "7V", "6T", "5T", "5D", "4T", "3T"],
 			ironhead: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			irontail: ["8M", "8V", "7T", "7V", "6T", "5T", "4M", "3M"],
-			leechseed: ["9L20"]
-			leafstorm: ["8L44"]
+			leechseed: ["9L20"],
+			leafstorm: ["8L44"],
 			lifedew: ["9L15", "8L15"],
 			liquidation: ["9M", "8M"],
 			megahorn: ["8M", "8V"],
