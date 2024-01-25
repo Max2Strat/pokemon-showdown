@@ -83921,7 +83921,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 		},
 	},
 	hatterene: {
-		learnset: {
 			learnset: {
 			attract: ["8M"],
 			batonpass: ["9M", "8M"],
