@@ -35411,7 +35411,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	shiftry: {
 		learnset: {
 			absorb: ["9L1", "8L1"],
-			acrobatics: ["9M"]
+			acrobatics: ["9M"],
 			aerialace: ["9M", "7M", "6M", "5M", "4M", "3M"],
 			aircutter: ["9M", "9L1", "8L1", "4T"],
 			airslash: ["9M", "8M"],
