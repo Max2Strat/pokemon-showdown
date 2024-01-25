@@ -9787,7 +9787,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			assurance: ["8M"],
 			attract: ["8M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			bide: ["8V", "7V"],
-			flamecharge: ["8L11"]
+			flamecharge: ["8L11"],
 			bodyslam: ["8M", "7V", "3T"],
 			brickbreak: ["8M", "8V", "7M", "6M", "5M", "4M", "3M"],
 			bulkup: ["8M", "8L42", "8V", "7M", "7L43", "7S3", "6M", "6L43", "5M", "4M", "3M"],
