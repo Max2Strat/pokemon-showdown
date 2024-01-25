@@ -71,10 +71,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Honor Slash",
 		desc: "Power doubles if the target has more than or equal to half of its maximum HP remaining.",
 },
-	hunterfang: {
-		name: "Hunter Fang",
-		desc: "No additional effect.",
-},
 	destinyshield: {
 		name: "Destiny Shield",
 		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user have their Special Attack lowered by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
