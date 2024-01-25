@@ -24233,7 +24233,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			helpinghand: ["9M"],
 			hiddenpower: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			honeclaws: ["6M", "5M"],
-			hunterfang: ["9L37"]
+			hunterfang: ["9L37"],
 			hydrocannon: ["9M", "7T", "6T", "5T", "4T"],
 			hydropump: ["9M", "9L70", "7L76", "7V", "6L76", "5L76", "4L63", "3L58"],
 			hyperbeam: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
