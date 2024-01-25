@@ -45073,7 +45073,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 		learnset: {
 			aerialace: ["9M", "7M", "6M", "5M", "5S3", "4M", "3M", "3S1"],
 			aircutter: ["4T"],
-			flareblitz: ["9L42", "9M"],
+			flareblitz: ["9L55", "9M"],
 			airslash: ["9M", "8M"],
 			aquatail: ["7T", "6T", "5T", "4T"],
 			attract: ["8M", "7M", "6M", "5M", "4M", "3M"],
@@ -45107,7 +45107,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			fireblast: ["9L49", "8M", "7M", "6M", "5M", "4M", "4S2", "3M"],
 			firefang: ["9L22", "8M", "7L1", "6L1", "5L1", "4L1"],
 			firespin: ["9M"],
-			flamethrower: ["9L38", "9L55", "8M", "8L55", "7M", "7L49", "6M", "6L49", "5M", "4M", "3M"],
+			flamethrower: ["9L43", "9M", "8M", "7M", "6M", "5M", "4M", "3M"],
 			focusenergy: ["9L46", "8M", "8L46", "7L21", "6L20", "5L20", "4L20", "3L21"],
 			frustration: ["7M", "6M", "5M", "4M", "3M"],
 			furycutter: ["4T", "3T"],
