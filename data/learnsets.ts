@@ -19995,7 +19995,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			strength: ["7V", "6M", "5M", "4M", "3M"],
 			substitute: ["9M", "8M", "8V", "7M", "7V", "6M", "5M", "4M", "4E", "3T", "3E"],
 			surf: ["9M", "8M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
-			synthesis: ["9L27"]
+			synthesis: ["9L27"],
 			swagger: ["7M", "7V", "6M", "5M", "4M", "3T"],
 			takedown: ["9M", "7V"],
 			terablast: ["9M"],
