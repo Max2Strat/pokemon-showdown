@@ -25805,7 +25805,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			hiddenpower: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			holdback: ["6S3"],
 			irontail: ["7T", "7E", "7V", "6T", "6E", "5T", "5E", "4M", "3M"],
-			leechseed: ["9L15"]
+			leechseed: ["9L15"],
 			lightscreen: ["9M", "9L43", "7M", "7L43", "7V", "6M", "6L43", "5M", "5L43", "4M", "4L37", "3M", "3L30"],
 			megadrain: ["9L4"]
 			mimic: ["3T"],
