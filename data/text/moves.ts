@@ -35,8 +35,6 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Death Parade",
 		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.",
 		shortDesc: "Has 1/4 recoil.",
-	desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 1/4 recoil.",
 	},
 	lunareclipse: {
 		name: "Lunar Eclipse",
