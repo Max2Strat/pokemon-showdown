@@ -109,24 +109,38 @@ desert: {
 		rating: 3,
 		num: 322,
 	},
-	slimeimmunity:{
+		slimeimmunity: {
 		onSetStatus(status, target, source, effect) {
-            if ((effect as Move)?.status) {
-                this.add('-immune', target, '[from] ability: Slime Immunity');
-            }
-            return false;
-        },
-        onTryAddVolatile(status, target) {
-            if (status.id === 'yawn') {
-                this.add('-immune', target, '[from] ability: Slime Immunity');
-                return null;
-            }
-        },
-        flags: {breakable: 1},
-        name: "Slime Immunity",
-        rating: 3.5,
-        num: 312,
-   },
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: Slime Immunity');
+			}
+			return false;
+		},
+		onTryAddVolatile(status, target) {
+			if (status.id === 'yawn') {
+				this.add('-immune', target, '[from] ability: Slime Immunity');
+				return null;
+			}
+		},
+		onSourceModifyAtkPriority: 6,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fighting') {
+				this.debug('Slime Immunity weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(spa, attacker, defender, move) {
+			if (move.type === 'Fighting') {
+				this.debug('Slime Immunity weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		flags: {breakable: 1},
+		name: "Slime Immunity",
+		rating: 4,
+		num: 323,
+	},
    huntersfangs: {
         onBasePowerPriority: 19,
         onBasePower(basePower, attacker, defender, move) {
