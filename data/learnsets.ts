@@ -19937,7 +19937,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			foresight: ["7E", "7V", "6E", "5E", "4E", "3E"],
 			frustration: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			futuresight: ["8M", "7E", "6E", "5E"],
-			gigadrain [8L30]
+			gigadrain: ["8L30"],
 			gigaimpact: ["9M", "8M", "7M", "6M", "5M", "4M"],
 			growl: ["9L1", "8L1", "8V", "7L1", "7V", "6L1", "5L1", "4L1", "3L1"],
 			hail: ["8M", "7M", "6M", "5M", "4M", "3M"],
