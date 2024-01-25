@@ -29,6 +29,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	hunterfang: {
 		name: "Hunter Fang",
 		desc: "Ignore the target ability.",
+      shortDesc: "Ignore the target ability.",
 	},
 	windypalm: {
 		name: "Windy Palm",
@@ -42,34 +43,43 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	lunareclipse: {
 		name: "Lunar Eclipse",
-		desc: "Deals damage to the target equal to the target's maximum HP."
+		desc: "OHKO the target.",
+		shortDesc: "OHKO the target.",
 	},
 	marvelouswind: {
 		name: "Marvelous Wind",
 		desc: "Confuse the target.",
+      shortDesc: "Confuse the target.",
 	},
 	fatalscythe: {
 		name: "Fatals Scythe",
 		desc: "Hits twice. Has a 30% chance to lower the target's defense by one.",
+      shortDesc: "Hits twice. Has a 30% chance to lower the target's defense by one.",
 	},
 	toxicsyrup: {
 		name: "Toxic Syrup",
 		desc: "The user restores 1/2 of its maximum HP, rounded half up. Poisoned the user.",
+      shortDesc: "Restores 1/2 of maximum HP. Poisoned the user.",
 	},
 	forestsong: {
+      name: "Forest Song",
 		desc: "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
 		shortDesc: "User recovers 75% of the damage dealt.",
 	},
 	dragonbrawl: {
+      name: "Dragon Brawl",
 		desc: "Cannot be selected the turn after it's used.",
+      shortDesc: "Cannot be selected the turn after it's used.",
 	},
 	tomahawk: {
 		name: "Toma-Hawk",
 		desc: "Lower the user's defense by 1 stage.",
+      shortDesc: "Lower the user's defense by 1 stage.",
 },
 	honorslash: {
 		name: "Honor Slash",
 		desc: "Power doubles if the target has more than or equal to half of its maximum HP remaining.",
+      shortDesc: "Power doubles if the target has more than 50% of maximum HP",
 },
 	destinyshield: {
 		name: "Destiny Shield",
@@ -79,23 +89,28 @@ export const MovesText: {[k: string]: MoveText} = {
 	leaderssoul: {
 		name: "Leader's Soul",
 		desc: "Raise all stats by 1 stage.",
+      shortDesc: "Raise all stats by 1 stage.",
 },
 	deathshot: {
 		name: "Death Shot",
 		desc: "No additional effect.",
+      shortDesc: "No additional effect.",
 },
 	nobrainrush: {
 		name: "No Brain Rush",
 		desc: "Has a 20% chance to confuse the target.",
+      shortDesc: "20% chance to confuse the target.",
 },
 	scalepiercer: {
 		name: "Scale-Piercer",
 		desc: "This move's type effectiveness against Dragon is changed to be super effective no matter what this move's type is.",
-      shortdesct: "Super effective on Dragon"
+      shortdesct: "Super effective on Dragon-type.",
 },
 	sharpfang: {
 		name: "Sharp Fang",
 		desc: "Takes half of the target's life. 30% chance to paralyse the target.",
+      shortDesc: "Takes half of the target's life. 30% chance to paralyse the target.",
+
 	},
 	acid: {
 		name: "Acid",
