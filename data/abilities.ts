@@ -174,7 +174,7 @@ desert: {
  royalprivileges: {
 
         onModifyPriority(priority, pokemon, target, move) {
-            if ((move?.type === 'Grass'|| move?.type === 'Dragon') && move.basePower <= 80) return priority + 1;
+            if (move?.type === 'Grass'|| move?.type === 'Dragon')  return priority + 1;
         },
         flags: {},
         name: "Royal Privileges",
@@ -350,7 +350,21 @@ desert: {
 		name: "Last Chapter",
 		rating: 4,
 		num: 331,
-	},
+},
+	dragonwrath: {
+onModifyDamage(damage, source, target, move) {
+if (move.type === 'Dragon') {
+if (target.getMoveHitData(move).typeMod < 0) {
+                this.debug('Dragon Wrath boost');
+                return this.chainModify(2);
+            }
+}
+},
+        flags: {},
+        name: "Dragon Wrath",
+        rating: 4,
+        num: 332,
+    },
    dualstrikes: {
         onPrepareHit(source, target, move) {
             if (move.category === 'Status' || move.multihit || move.flags['noparentalbond'] || move.flags['charge'] ||
