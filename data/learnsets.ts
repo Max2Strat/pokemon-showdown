@@ -25807,14 +25807,14 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			irontail: ["7T", "7E", "7V", "6T", "6E", "5T", "5E", "4M", "3M"],
 			leechseed: ["9L15"],
 			lightscreen: ["9M", "9L43", "7M", "7L43", "7V", "6M", "6L43", "5M", "5L43", "4M", "4L37", "3M", "3L30"],
-			megadrain: ["9L4"]
+			megadrain: ["9L4"],
 			mimic: ["3T"],
 			naturalgift: ["4M"],
 			odorsleuth: ["7E", "6E", "5E", "4E", "3E"],
 			powergem: ["9M", "9L29", "7L29", "6L29", "5L29", "4L41"],
 			protect: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			raindance: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
-			razorleaf: ["9L10"]
+			razorleaf: ["9L10"],
 			reflect: ["9M", "7V", "5D", "4E", "3E"],
 			rest: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			return: ["7M", "7V", "6M", "5M", "4M", "3M"],
@@ -25874,7 +25874,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			fling: ["9M", "7M", "6M", "5M", "4M"],
 			focuspunch: ["9M", "7T", "6T", "4M", "3M"],
 			frustration: ["7M", "7V", "6M", "5M", "4M", "3M"],
-			gigadrain: ["9L27"]
+			gigadrain: ["9L27"],
 			growl: ["9L1", "7L1", "7V", "6L1", "5L1", "4L1", "3L1"],
 			headbutt: ["7V", "4T"],
 			healbell: ["7T", "6T", "5T", "4T"],
@@ -25882,10 +25882,10 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			hiddenpower: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			icepunch: ["9M"],
 			irontail: ["7T", "7V", "6T", "5T", "4M", "3M"],
-			leechseed: ["9L15"]
+			leechseed: ["9L15"],
 			lightscreen: ["9M", "9L52", "7M", "7L52", "7V", "6M", "6L52", "5M", "5L52", "4M", "4L42", "3M", "3L36"],
 			lowkick: ["9M"],
-			megadrain: ["9L4"]
+			megadrain: ["9L4"],
 			megakick: ["3T"],
 			megapunch: ["3T"],
 			mimic: ["3T"],
@@ -25894,7 +25894,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			poweruppunch: ["6M"],
 			protect: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			raindance: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
-			razorleaf: ["9L10"]
+			razorleaf: ["9L10"],
 			reflect: ["9M"],
 			rest: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			return: ["7M", "7V", "6M", "5M", "4M", "3M"],
@@ -25906,7 +25906,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			seismictoss: ["3T"],
 			shockwave: ["7T", "6T", "4M", "3M"],
 			signalbeam: ["7T", "7L47", "6T", "6L47", "5T", "5L47", "4T", "4L36"],
-			sleeppowder: ["9L31"]
+			sleeppowder: ["9L31"],
 			sleeptalk: ["9M", "7M", "7V", "6M", "5T", "4M", "3T"],
 			snore: ["7T", "7V", "6T", "5T", "4T", "3T"],
 			strength: ["7V", "6M", "5M", "4M", "3M"],
@@ -25963,7 +25963,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			focuspunch: ["9M", "7T", "6T", "4M", "3M"],
 			frenzyplant: ["9L65"],
 			frustration: ["7M", "7V", "6M", "5M", "4M", "3M"],
-			gigadrain: ["9L27"]
+			gigadrain: ["9L27"],
 			gigaimpact: ["9M", "7M", "6M", "5M", "4M"],
 			growl: ["9L1", "7L1", "7V", "6L1", "5L1", "4L1", "3L1"],
 			headbutt: ["7V", "4T"],
@@ -25974,11 +25974,11 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			icepunch: ["9M"],
 			irontail: ["7T", "7V", "6T", "5T", "4M", "3M"],
 			laserfocus: ["7T"],
-			leechseed: ["9L15"]
-			leafstorm: ["9L44"]
+			leechseed: ["9L15"],
+			leafstorm: ["9L44"],
 			lightscreen: ["9M", "9L57", "7M", "7L57", "7V", "6M", "6L57", "5M", "5L57", "4M", "4L51", "3M", "3L42"],
 			lowkick: ["9M"],
-			megadrain: ["9L4"]
+			megadrain: ["9L4"],
 			megakick: ["3T"],
 			megapunch: ["3T"],
 			meteorbeam: ["9M"],
@@ -25989,7 +25989,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			poweruppunch: ["6M"],
 			protect: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			raindance: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
-			razorleaf: ["9L10"]
+			razorleaf: ["9L10"],
 			reflect: ["9M"],
 			rest: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			return: ["7M", "7V", "6M", "5M", "4M", "3M"],
@@ -26016,7 +26016,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			thunderwave: ["9M", "9L1", "7M", "7L1", "7V", "6M", "6L1", "5M", "5L1", "4M", "4L1", "3T", "3L1"],
 			toxic: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			trailblaze: ["9M"],
-			woodhammer: ["9L50"]
+			woodhammer: ["9L50"],
 
 		},
 	},
@@ -26433,7 +26433,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			frustration: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			gigaimpact: ["9M"],
 			grassknot: ["9M"],
-			grassyglide: ["9L37"]
+			grassyglide: ["9L37"],
 			hammerarm: ["9L1", "8L1", "7L50", "6L47", "5L47", "4L49"],
 			harden: ["8E", "7E", "6E", "5E", "4E"],
 			headbutt: ["8E", "7E", "7V", "6E", "5E", "4T", "4E"],
@@ -26441,11 +26441,11 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			helpinghand: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			hiddenpower: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			highhorsepower: ["9M"],
-			hornleech: ["9M"]
+			hornleech: ["9M"],
 			hyperbeam: ["9M"],
 			icepunch: ["9M", "8M", "7T", "7V", "6T", "5T", "4T", "3T"],
 			irondefense: ["9M", "8M"],
-			leafstorm: ["9M"]
+			leafstorm: ["9M"],
 			leechseed: ["9L24"]
 			lowkick: ["9M", "9L36", "8M", "8L36", "7T", "7L1", "7V", "6T", "6L1", "5T", "5L1", "4T", "4L1", "3L17"],
 			lowsweep: ["9M"],
@@ -26774,7 +26774,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			bodyslam: ["3T"],
 			bounce: ["9E", "7T", "7E", "6T", "6E", "5T", "5E", "4T", "4E"],
 			brickbreak: ["9M", "7M", "6M", "5M", "4M", "3M"],
-			bulletseed: ["9L19"]
+			bulletseed: ["9L19"],
 			captivate: ["4M"],
 			chillingwater: ["9M"],
 			confide: ["7M", "6M"],
@@ -26892,7 +26892,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			batonpass: ["9M", "9L11", "7L11", "6L11", "5L11", "4L11"],
 			bounce: ["7T", "6T", "5T", "4T"],
 			brickbreak: ["9M", "7M", "6M", "5M", "4M"],
-			bulletseed: ["9L19"]
+			bulletseed: ["9L19"],
 			captivate: ["4M"],
 			chillingwater: ["9M"],
 			confide: ["7M", "6M"],
@@ -26935,7 +26935,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			naturalgift: ["4M"],
 			payback: ["7M", "6M", "5M", "4M"],
 			poweruppunch: ["6M"],
-			powerwhip: ["9L42"]
+			powerwhip: ["9L42"],
 			protect: ["9M", "7M", "6M", "5M", "4M"],
 			raindance: ["9M", "7M", "6M", "5M", "4M"],
 			rest: ["9M", "7M", "6M", "5M", "4M"],
@@ -27687,10 +27687,10 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			shadowball: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			skyattack: ["9E", "7T", "7E", "7V", "6T", "6E", "5T", "5E", "4E", "3T", "3E"],
 			sleeptalk: ["9M", "7M", "7V", "6M", "5T", "4M", "3T"],
-			sludge: ["9L12"]
-			sludgebomb: ["9M"]
-			sludgewave: ["9M"]
-			smog: ["9L7"]
+			sludge: ["9L12"],
+			sludgebomb: ["9M"],
+			sludgewave: ["9M"],
+			smog: ["9L7"],
 			snarl: ["9M", "7M", "6M", "5M"],
 			snatch: ["7T", "6T", "5T", "4M", "3M"],
 			snore: ["7T", "7V", "6T", "3T"],
@@ -27780,10 +27780,10 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			shadowball: ["9M", "7M", "6M", "5M", "4M"],
 			skyattack: ["7T", "7S0", "6T", "5T", "4T"],
 			sleeptalk: ["9M", "7M", "6M", "5T", "4M"],
-			sludge: ["9L12"]
-			sludgebomb: ["9L22"]
-			sludgewave: ["9L43"]
-			smog: ["9L7"]
+			sludge: ["9L12"],
+			sludgebomb: ["9L22"],
+			sludgewave: ["9L43"],
+			smog: ["9L7"],
 			snarl: ["9M", "7M", "6M", "5M"],
 			snatch: ["7T", "6T", "5T", "4M"],
 			snore: ["7T", "6T"],
