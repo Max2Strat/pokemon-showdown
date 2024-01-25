@@ -8,6 +8,49 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's moves that match one of its types have a same-type attack bonus (STAB) of 2 instead of 1.5.",
 		shortDesc: "This Pokemon's same-type attack bonus (STAB) is 2 instead of 1.5.",
 	},
+	solublebody: {
+		name: "Soluble Body",
+		desc: "This Pokemon receives 1/2 damage from contact moves, but double damage from Electric moves.",
+		shortDesc: "This Pokemon takes 1/2 damage from contact moves, 2x damage from Electric moves.",
+	},
+	slimeimmunity: {
+		name: "Slime Immunity",
+		desc: "This Pokemon cannot become affected by a non-volatile status condition or Yawn. If a Pokemon uses a Fighting-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon.",
+		shortDesc: "Fighting damage to this Pokemon dealt with a halved offensive stat; can't be statused.",
+	},
+	dragonwrath: {
+		name: "Dragon Wrath",
+		shortDesc: "This Pokemon's Dragon-type attacks that are not very effective on a target deal double damage.",
+	},
+	royalprivileges: {
+		name: "Royal Privileges",
+		desc: "This Pokémon's Grass-type and Dragon-type moves have their priority increased by 1.",
+	},
+	duelist: {
+		name: "Duelist",
+		desc: "This Pokemon's moves are 20% stronger if you attack first.",
+	},
+	fairfight: {
+		name: "Fair Fight",
+		desc: "if any opposing Pokemon has an attack that is super effective against this Pokemon, +1 Atk.",
+	},
+    bloomingsword: {
+		name: "Blooming Sword",
+		shortDesc: "On switch-in, this Pokemon lowers the Defense of opponents by 1 stage.",
+	},
+    airforce: {
+		name: "Air Force",
+		shortDesc: "On switch-in, sets Tailwind on the field.",
+	},
+	bull: {
+		name: "Bull",
+		desc: "This Pokemon's attacks with recoil or crash damage have their power multiplied by 1.5. Does not affect Struggle.",
+		shortDesc: "This Pokemon's attacks with recoil or crash damage have 1.5x power; not Struggle.",
+	},
+	huntersfang: {
+		name: "Hunter's Fang",
+		desc: "This Pokemon's bite-based attacks have their power multiplied by 1.5. 20% chance to poison the target.",
+	},
 	aerilate: {
 		name: "Aerilate",
 		desc: "This Pokemon's Normal-type moves become Flying-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
