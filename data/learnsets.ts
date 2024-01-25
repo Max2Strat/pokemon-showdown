@@ -21537,7 +21537,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			takedown: ["7V"],
 			thief: ["8M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			toxic: ["8V", "7M", "7V", "6M", "5M", "4M", "3M"],
-			uturn: ["8L31"]
+			uturn: ["8L31"],
 			waterfall: ["8M", "8V", "7M", "6M", "5M", "4M", "3M"],
 			watergun: ["7V"],
 			waterpulse: ["7T", "6T", "4M", "3M"],
