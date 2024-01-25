@@ -108,7 +108,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 this.heal(target.maxhp);
 }, 
 		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-      heal: [2],
 		secondary: null,
 		target: "self",
 		type: "Fairy",
