@@ -398,10 +398,10 @@ if (target.getMoveHitData(move).typeMod < 0) {
         rating: 4.5,
         num: 316,
    },
-   duelist: {
+ duelist: {
         onBasePowerPriority: 21,
         onBasePower(basePower, pokemon) {
-            let boosted = true;
+            let boosted = false;
             for (const target of this.getAllActive()) {
                 if (target === pokemon) continue;
                 if (target.newlySwitched || this.queue.willMove(target)) {
