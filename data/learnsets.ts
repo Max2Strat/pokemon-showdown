@@ -51976,7 +51976,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			earthpower: ["9M", "8M"],
 			earthquake: ["9M", "8M", "7M", "6M", "5M", "4M"],
 			endure: ["9M", "8M", "4M"],
-			eruption: ["9L55", "9M"]
+			eruption: ["9L55", "9M"],
 			facade: ["9M", "8M", "7M", "6M", "5M", "4M"],
 			fireblast: ["8M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			firepunch: ["8L21", "8M"],
