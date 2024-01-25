@@ -23843,7 +23843,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			irontail: ["7V"],
 			laserfocus: ["7T"],
 			lavaplume: ["9L43", "7L43", "6L43", "5L43", "4L35"],
-			leaderssoul: ["9M"]
+			leaderssoul: ["9M"],
 			leer: ["9L1", "7L1", "7V", "6L1", "5L1", "4L1", "3L1"],
 			lowkick: ["9M", "7T", "6T", "5T", "4T"],
 			megakick: ["3T"],
