@@ -33365,7 +33365,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			dynamicpunch: ["3T"],
 			endeavor: ["9M", "9L50", "8L50", "7T", "6T", "5T", "4T"],
 			endure: ["9M", "8M", "4M", "3T"],
-			energyball: ["9M", "9L1", "8M", "8L1", "7M", "6M", "5M", "4M"],
+			energyball: ["9M", "9L32", "8M", "8L32", "7M", "6M", "5M", "4M"],
 			facade: ["9M", "8M", "7M", "6M", "5M", "4M", "3M"],
 			falseswipe: ["9M", "9L1", "8M", "8L1", "7M", "7L48", "6M", "6L48", "5M", "5L53", "4M", "4L53", "3L53"],
 			flash: ["6M", "5M", "4M", "3M"],
