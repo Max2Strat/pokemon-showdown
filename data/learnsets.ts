@@ -82236,7 +82236,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			dig: ["8M"],
 			ember: ["8L1"],
 			firespin: ["8L12"],
-			firefang: ["8L17"]
+			firefang: ["8L17"],
 			endure: ["8M"],
 			facade: ["8M"],
 			faketears: ["8M"],
