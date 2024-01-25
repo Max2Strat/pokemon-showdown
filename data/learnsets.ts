@@ -24195,7 +24195,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			aerialace: ["9M", "7M", "6M", "5M", "4M", "3M"],
 			agility: ["9M", "9L1", "7L1", "6L30", "5L30", "4L30"],
 			thunderfang: ["9L35"],
-			firefang: ["9L35"]
+			firefang: ["9L35"],
 			ancientpower: ["4T"],
 			aquatail: ["9L59", "7T", "7L63", "6T", "6L63", "5T", "5L63", "4T", "4L50"],
 			attract: ["7M", "7V", "6M", "5M", "4M", "3M"],
