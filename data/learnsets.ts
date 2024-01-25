@@ -49158,7 +49158,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			hail: ["7M", "6M", "5M", "4M"],
 			headbutt: ["4T"],
 			helpinghand: ["9M", "7T"],
-			hiddenpower: ["7M", "6M", "5M", "4M"],,
+			hiddenpower: ["7M", "6M", "5M", "4M"],
 			hyperbeam: ["9M", "7M", "6M", "5M", "4M"],
 			icebeam: ["9M", "7M", "6M", "5M", "4M"],
 			icefang: ["9M", "9L1", "7L1", "6L1", "5L1", "4L1"],
