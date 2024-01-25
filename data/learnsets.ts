@@ -69145,7 +69145,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	florges: {
 		learnset: {
-			learnset: {
 			afteryou: ["7T", "6T"],
 			allyswitch: ["7T"],
 			aromatherapy: ["7L38", "6L38"],
