@@ -21485,7 +21485,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			leer: ["8L20", "8V", "7L1", "7V", "6L1", "5L1", "4L1", "3L1"],
 			liquidation: ["8M", "8L56", "7T"],
 			lowkick: ["8M", "7T", "6T", "5T", "4T"],
-			lunge: ["8L42"]
+			lunge: ["8L42"],
 			megadrain: ["8V", "7L36", "7V", "6L36", "5L36", "4L36", "3L55"],
 			megakick: ["8M", "7V", "3T"],
 			metalsound: ["8L63", "7L45", "6L45", "5L45", "4L45", "3L46"],
