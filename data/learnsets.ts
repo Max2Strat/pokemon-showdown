@@ -41064,7 +41064,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			scorchingsands: ["9M", "8T"],
 			screech: ["9L24", "8M", "8L24", "7L22", "6L22", "5L34", "4L41", "3L41", "3S0"],
 			secretpower: ["6M", "4M", "3M"],
-			sharpfang: ["9L34"]
+			sharpfang: ["9L34"],
 			signalbeam: ["7T", "6T", "5T"],
 			silverwind: ["4M"],
 			sleeptalk: ["9M", "8M", "7M", "6M", "5T", "4M", "3T"],
