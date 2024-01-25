@@ -25335,7 +25335,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			trick: ["8M", "7T", "6T", "5T", "4T"],
 			uproar: ["8M", "7T", "6T", "5T", "5D", "4T"],
 			waterpulse: ["7T", "6T", "4M", "3M"],
-			willowisp: ["8M"]
+			willowisp: ["8M"],
 			wish: ["8L52", "7L29", "6L29", "5L29", "4L28", "3L29"],
 			workup: ["8M", "7M", "5M"],
 			yawn: ["8L20", "7L13", "6L13", "5L13", "4L15", "3L13", "3S0"],
