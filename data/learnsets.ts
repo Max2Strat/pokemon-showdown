@@ -29699,7 +29699,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			calmmind: ["9M", "8M", "7M", "6M", "5M", "4M"],
 			captivate: ["4M"],
 			chillingwater: ["9M"],
-			closecombat: ["9L41"]
+			closecombat: ["9L41"],
 			confide: ["7M", "6M"],
 			cut: ["6M", "5M", "4M"],
 			dig: ["9M", "8M", "6M", "5M", "4M"],
