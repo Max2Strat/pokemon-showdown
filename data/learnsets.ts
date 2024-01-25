@@ -61111,7 +61111,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 		    acidarmor: ["9L30"],
 			afteryou: ["7T", "6T", "5T"],
 			bubble: ["8L1"],
-			bubblebeam: ["8L14"]
+			bubblebeam: ["8L14"],
 			allyswitch: ["9L28", "8M", "8L28", "7T"],
 			aquaring: ["9L17"],
 			attract: ["8M", "7M", "6M", "5M"],
