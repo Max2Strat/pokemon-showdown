@@ -287,61 +287,61 @@ this.heal(target.maxhp);
 		contestType: "Clever",
    },
    destinyshield: {
-		num: 929,
-		accuracy: true,
-		basePower: 0,
-		category: "Statut",
-		name: "Destiny Shield",
-		pp: 5,
-		priority: 5,
-	   flags: {noassist: 1, failcopycat: 1, failinstruct: 1},
-		stallingMove: true,
-		volatileStatus: 'kingsshield',
-		onPrepareHit(pokemon) {
-			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
-		},
-		onHit(pokemon) {
-			pokemon.addVolatile('stall');
-		},
-		condition: {
-			duration: 1,
-			onStart(target) {
-				this.add('-singleturn', target, 'Protect');
-			},
-			onTryHitPriority: 3,
-			onTryHit(target, source, move) {
-				if (!move.flags['protect'] || move.category === 'Status') {
-					if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
-					if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
-					return;
-				}
-				if (move.smartTarget) {
-					move.smartTarget = false;
-				} else {
-					this.add('-activate', target, 'move: Protect');
-				}
-				const lockedmove = source.getVolatile('lockedmove');
-				if (lockedmove) {
-					// Outrage counter is reset
-					if (source.volatiles['lockedmove'].duration === 2) {
-						delete source.volatiles['lockedmove'];
-					}
-				}
-				if (this.checkMoveMakesContact(move, source, target)) {
-					this.boost({spa: -1}, source, target, this.dex.getActiveMove("Destiny Shield"));
-				}
-				return this.NOT_FAIL;
-			},
-			onHit(target, source, move) {
-				if (move.isZOrMaxPowered && this.checkMoveMakesContact(move, source, target)) {
-					this.boost({spa: -1}, source, target, this.dex.getActiveMove("Destiny Shield"));
-				}
-			},
-		},
-		secondary: null,
-		target: "self",
-		type: "Psychic",
-		contestType: "Clever",
+        num: 929,
+        accuracy: true,
+        basePower: 0,
+        category: "Status",
+        name: "Destiny Shield",
+        pp: 5,
+        priority: 5,
+       flags: {noassist: 1, failcopycat: 1, failinstruct: 1},
+        stallingMove: true,
+        volatileStatus: 'kingsshield',
+        onPrepareHit(pokemon) {
+            return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+        },
+        onHit(pokemon) {
+            pokemon.addVolatile('stall');
+        },
+        condition: {
+            duration: 1,
+            onStart(target) {
+                this.add('-singleturn', target, 'Protect');
+            },
+            onTryHitPriority: 3,
+            onTryHit(target, source, move) {
+                if (!move.flags['protect'] || move.category === 'Status') {
+                    if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
+                    if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
+                    return;
+                }
+                if (move.smartTarget) {
+                    move.smartTarget = false;
+                } else {
+                    this.add('-activate', target, 'move: Protect');
+                }
+                const lockedmove = source.getVolatile('lockedmove');
+                if (lockedmove) {
+                    // Outrage counter is reset
+                    if (source.volatiles['lockedmove'].duration === 2) {
+                        delete source.volatiles['lockedmove'];
+                    }
+                }
+                
+                    this.boost({spa: -1}, source, target);
+                
+                return this.NOT_FAIL;
+            },    
+                onHit(target, source, move) {
+                if (move.isZOrMaxPowered) {
+                    this.boost({spa: -1}, source, target);
+                }
+            },
+        },        
+        secondary: null,
+        target: "self",
+        type: "Psychic",
+        contestType: "Clever",
  },
    sharpfang: {
 		num: 930,
