@@ -22950,7 +22950,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	mew: {
 		learnset: {
-		toxic syrup: ["9M"],
+		    toxicsyrup: ["9M"],
 			acidspray: ["9M"],
 			acrobatics: ["9M", "8M", "7M", "6M", "5M"],
 			aerialace: ["9M", "7M", "6M", "5M", "4M", "3M"],
