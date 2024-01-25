@@ -25684,7 +25684,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			cosmicpower: ["8M"],
 			curse: ["7V"],
 			dazzlinggleam: ["8M", "7M", "6M"],
-			destinyshield: ["9L40"]
+			destinyshield: ["9L40"],
 			defog: ["7T", "4M"],
 			detect: ["7V"],
 			doubleedge: ["3T"],
