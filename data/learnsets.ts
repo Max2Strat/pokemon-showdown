@@ -28591,7 +28591,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	gligar: {
 		learnset: {
-		toxic syrup: ["9M"],
+		toxicsyrup: ["9M"],
 			acrobatics: ["9M", "9L22", "7M", "7L22", "6M", "6L22", "5M", "5L22"],
 			aerialace: ["9M", "7M", "6M", "5M", "4M", "3M"],
 			agility: ["9M", "7E", "6E", "5E", "4E"],
@@ -28710,7 +28710,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	gliscor: {
 		learnset: {
-		toxic syrup: ["9M"],
+		toxicsyrup: ["9M"],
 			acrobatics: ["9M", "9L22", "7M", "7L22", "6M", "6L22", "5M", "5L22"],
 			aerialace: ["9M", "7M", "6M", "5M", "4M"],
 			agility: ["9M"],
@@ -39262,7 +39262,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	volbeat: {
 		learnset: {
-		toxic syrup: ["9M"],
+		toxicsyrup: ["9M"],
 			acrobatics: ["9M", "7M", "6M", "5M"],
 			aerialace: ["9M", "7M", "6M", "5M", "4M", "3M"],
 			aircutter: ["9M", "4T"],
@@ -39356,7 +39356,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	illumise: {
 		learnset: {
-		toxic syrup: ["9M"],
+		toxicsyrup: ["9M"],
 			acrobatics: ["9M", "7M", "6M", "5M"],
 			aerialace: ["9M", "7M", "6M", "5M", "4M", "3M"],
 			aircutter: ["9M", "4T"],
@@ -57470,7 +57470,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	leavanny: {
 		learnset: {
-		toxic syrup: ["9M"],
+		toxicsyrup: ["9M"],
 			aerialace: ["7M", "6M", "5M"],
 			agility: ["9M"],
 			airslash: ["9M"],
@@ -78062,7 +78062,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	silvally: {
 		learnset: {
-		toxic syrup: ["9M"],
+		toxicsyrup: ["9M"],
 			aerialace: ["8L1", "7M", "7L20"],
 			airslash: ["8M", "8L30", "7L60"],
 			bite: ["8L1", "7L15"],
