@@ -23803,7 +23803,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			dig: ["9M", "7V", "6M", "5M", "4M", "3M"],
 			doubleedge: ["9M", "9L1", "7L1", "6L1", "5L69", "4L53", "3T"],
 			doubleteam: ["7M", "7V", "6M", "5M", "4M", "3M"],
-			dracometeor: ["9M"]
+			dracometeor: ["9M"],
 			dragonbreath: ["9L1"],
 			dragonclaw: ["9M", "8M", "8S9", "7M", "6M", "5M", "4M", "3M"],
 			dragondance: ["9M", "9L62", "8M", "8L62", "8S9", "7L61", "6L61", "6S7", "5L61", "5S3", "4L53", "4S2", "3S1"],
