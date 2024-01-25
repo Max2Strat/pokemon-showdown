@@ -4331,7 +4331,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			dragonpulse: ["8M", "8V", "7T", "6T", "5T", "4M"],
 			scaleshot: ["9L38", "8V"],
 			dragontail: ["8V", "7M", "6M", "5M"],
-			dragonclaw: ["9Lv30" 8V", "7M", "6M", "5M", "4M", "3M", "2M"],
+			dragonclaw: ["9Lv30", 8V", "7M", "6M", "5M", "4M", "3M", "2M"],
 			drillrun: ["8M", "8V", "7T", "6T"],
 			dynamicpunch: ["7V", "3T"],
 			earthquake: ["8M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
