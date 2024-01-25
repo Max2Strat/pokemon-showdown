@@ -45095,7 +45095,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			dragonbreath: ["9L1", "8L1", "7L13", "6L13", "5L32", "4L32", "3L38", "3S0"],
 			dragoncheer: ["9M"],
 			heatwave: ["9L38", "9M"],
-			dragonclaw: ["9M", "9L33", "8M", "8L33", "7M", "7L29", "6M", "6L29", "5M", "5L61", "5S3", "4M", "4L61", "4S2", "3M", "3L79", "3S1"],
+			dragonclaw: ["9M", "9L33", "8M", "8L33", "7M", "6M", "5M", "5S3", "4M", "4L61", "4S2", "3M", "3S1"],
 			dragondance: ["9M", "8M", "5S3", "3S1"],
 			dragonpulse: ["9M", "8M", "7T", "6T", "5T", "4M"],
 			dragontail: ["9M", "9L1", "8L1", "7M", "7L1", "6M", "6L1", "5M", "5L80"],
