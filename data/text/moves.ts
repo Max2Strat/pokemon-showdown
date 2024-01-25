@@ -26,6 +26,10 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "No additional effect.",
 		shortDesc: "Usually goes first.",
 	},
+	hunterfang: {
+		name: "Hunter Fang",
+		desc: "Ignore the target ability.",
+	},
 	windypalm: {
 		name: "Windy Palm",
 		desc: "No additional effect.",
