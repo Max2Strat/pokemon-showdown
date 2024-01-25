@@ -39601,7 +39601,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	roserade: {
 		learnset: {
-		toxicsyrup: ["8L33"]
+		toxicsyrup: ["8L33"],
 			absorb: ["8L1"],
 			aromatherapy: ["8L1"],
 			attract: ["8M", "7M", "6M", "5M", "4M"],
