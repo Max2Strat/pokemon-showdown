@@ -54013,7 +54013,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			defog: ["7T"],
 			doubleedge: ["9M"],
 			doubleteam: ["7M", "6M", "5M"],
-			dracometeor: ["9M"]
+			dracometeor: ["9M"],
 			dragonbreath: ["8L18", "7E", "7V", "6E", "5E", "4E", "3E"],
 			dragondance: ["8L42"],
 			dragondarts: ["9L50"],
