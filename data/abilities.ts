@@ -109,24 +109,38 @@ desert: {
 		rating: 3,
 		num: 322,
 	},
-	slimeimmunity:{
+		slimeimmunity: {
 		onSetStatus(status, target, source, effect) {
-            if ((effect as Move)?.status) {
-                this.add('-immune', target, '[from] ability: Slime Immunity');
-            }
-            return false;
-        },
-        onTryAddVolatile(status, target) {
-            if (status.id === 'yawn') {
-                this.add('-immune', target, '[from] ability: Slime Immunity');
-                return null;
-            }
-        },
-        flags: {breakable: 1},
-        name: "Slime Immunity",
-        rating: 3.5,
-        num: 312,
-   },
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: Slime Immunity');
+			}
+			return false;
+		},
+		onTryAddVolatile(status, target) {
+			if (status.id === 'yawn') {
+				this.add('-immune', target, '[from] ability: Slime Immunity');
+				return null;
+			}
+		},
+		onSourceModifyAtkPriority: 6,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fighting') {
+				this.debug('Slime Immunity weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(spa, attacker, defender, move) {
+			if (move.type === 'Fighting') {
+				this.debug('Slime Immunity weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		flags: {breakable: 1},
+		name: "Slime Immunity",
+		rating: 4,
+		num: 323,
+	},
    huntersfangs: {
         onBasePowerPriority: 19,
         onBasePower(basePower, attacker, defender, move) {
@@ -174,7 +188,7 @@ desert: {
  royalprivileges: {
 
         onModifyPriority(priority, pokemon, target, move) {
-            if ((move?.type === 'Grass'|| move?.type === 'Dragon') && move.basePower <= 80) return priority + 1;
+            if (move?.type === 'Grass'|| move?.type === 'Dragon')  return priority + 1;
         },
         flags: {},
         name: "Royal Privileges",
@@ -350,7 +364,21 @@ desert: {
 		name: "Last Chapter",
 		rating: 4,
 		num: 331,
-	},
+},
+	dragonwrath: {
+onModifyDamage(damage, source, target, move) {
+if (move.type === 'Dragon') {
+if (target.getMoveHitData(move).typeMod < 0) {
+                this.debug('Dragon Wrath boost');
+                return this.chainModify(2);
+            }
+}
+},
+        flags: {},
+        name: "Dragon Wrath",
+        rating: 4,
+        num: 332,
+    },
    dualstrikes: {
         onPrepareHit(source, target, move) {
             if (move.category === 'Status' || move.multihit || move.flags['noparentalbond'] || move.flags['charge'] ||

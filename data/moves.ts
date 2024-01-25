@@ -86,6 +86,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		category: "Special",
 		name: "Lunar Eclipse",
 		pp: 1,
+      noPPBoosts: true,
       ohko: true,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
@@ -101,12 +102,12 @@ export const Moves: {[moveid: string]: MoveData} = {
       basePower: 0,
 		name: "Rising Sun",
 		pp: 1,
+      noPPBoosts: true,
 		priority: 5,
     onHit(target, source, move) {
 this.heal(target.maxhp);
 }, 
 		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-      heal: [2],
 		secondary: null,
 		target: "self",
 		type: "Fairy",
@@ -244,24 +245,24 @@ this.heal(target.maxhp);
 		type: "Steel",
 		contestType: "Clever",
    },
-   toxicsyrup: {
-		num: 927,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Toxic Syrup",
-		pp: 16,
+  toxicsyrup: {
+        num: 927,
+        accuracy: true,
+        basePower: 0,
+        category: "Status",
+        name: "Toxic Syrup",
+        pp: 10,
       onHit(target, source, move) {
             const result = target.setStatus('tox', source, move);
             if (!result) return result;
         },
       heal: [1, 2],
-		priority: 0,
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		secondary: null,
-		target: "self",
-		type: "Poison",
-		contestType: "Clever",
+        priority: 0,
+        flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+        secondary: null,
+        target: "self",
+        type: "Poison",
+        contestType: "Clever",
    },
    leaderssoul: {
 		num: 928,
@@ -270,6 +271,7 @@ this.heal(target.maxhp);
 		category: "Status",
 		name: "Leader's Soul",
 		pp: 1,
+      noPPBoosts: true,
 		priority: 0,
       boosts: {
             atk: 1,
@@ -285,61 +287,61 @@ this.heal(target.maxhp);
 		contestType: "Clever",
    },
    destinyshield: {
-		num: 929,
-		accuracy: true,
-		basePower: 0,
-		category: "Statut",
-		name: "Destiny Shield",
-		pp: 5,
-		priority: 5,
-	   flags: {noassist: 1, failcopycat: 1, failinstruct: 1},
-		stallingMove: true,
-		volatileStatus: 'kingsshield',
-		onPrepareHit(pokemon) {
-			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
-		},
-		onHit(pokemon) {
-			pokemon.addVolatile('stall');
-		},
-		condition: {
-			duration: 1,
-			onStart(target) {
-				this.add('-singleturn', target, 'Protect');
-			},
-			onTryHitPriority: 3,
-			onTryHit(target, source, move) {
-				if (!move.flags['protect'] || move.category === 'Status') {
-					if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
-					if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
-					return;
-				}
-				if (move.smartTarget) {
-					move.smartTarget = false;
-				} else {
-					this.add('-activate', target, 'move: Protect');
-				}
-				const lockedmove = source.getVolatile('lockedmove');
-				if (lockedmove) {
-					// Outrage counter is reset
-					if (source.volatiles['lockedmove'].duration === 2) {
-						delete source.volatiles['lockedmove'];
-					}
-				}
-				if (this.checkMoveMakesContact(move, source, target)) {
-					this.boost({spa: -1}, source, target, this.dex.getActiveMove("Destiny Shield"));
-				}
-				return this.NOT_FAIL;
-			},
-			onHit(target, source, move) {
-				if (move.isZOrMaxPowered && this.checkMoveMakesContact(move, source, target)) {
-					this.boost({spa: -1}, source, target, this.dex.getActiveMove("Destiny Shield"));
-				}
-			},
-		},
-		secondary: null,
-		target: "self",
-		type: "Psychic",
-		contestType: "Clever",
+        num: 929,
+        accuracy: true,
+        basePower: 0,
+        category: "Status",
+        name: "Destiny Shield",
+        pp: 5,
+        priority: 5,
+       flags: {noassist: 1, failcopycat: 1, failinstruct: 1},
+        stallingMove: true,
+        volatileStatus: 'kingsshield',
+        onPrepareHit(pokemon) {
+            return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+        },
+        onHit(pokemon) {
+            pokemon.addVolatile('stall');
+        },
+        condition: {
+            duration: 1,
+            onStart(target) {
+                this.add('-singleturn', target, 'Protect');
+            },
+            onTryHitPriority: 3,
+            onTryHit(target, source, move) {
+                if (!move.flags['protect'] || move.category === 'Status') {
+                    if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
+                    if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
+                    return;
+                }
+                if (move.smartTarget) {
+                    move.smartTarget = false;
+                } else {
+                    this.add('-activate', target, 'move: Protect');
+                }
+                const lockedmove = source.getVolatile('lockedmove');
+                if (lockedmove) {
+                    // Outrage counter is reset
+                    if (source.volatiles['lockedmove'].duration === 2) {
+                        delete source.volatiles['lockedmove'];
+                    }
+                }
+                
+                    this.boost({spa: -1}, source, target);
+                
+                return this.NOT_FAIL;
+            },    
+                onHit(target, source, move) {
+                if (move.isZOrMaxPowered) {
+                    this.boost({spa: -1}, source, target);
+                }
+            },
+        },        
+        secondary: null,
+        target: "self",
+        type: "Psychic",
+        contestType: "Clever",
  },
    sharpfang: {
 		num: 930,

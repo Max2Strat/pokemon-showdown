@@ -31,9 +31,35 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "No additional effect.",
 		shortDesc: "Usually goes first.",
 	},
+	deathparade: {
+		name: "Death Parade",
+		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 1/4 recoil.",
+	desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 1/4 recoil.",
+	},
+	lunareclipse: {
+		name: "Lunar Eclipse",
+		desc: "Deals damage to the target equal to the target's maximum HP."
+	},
+	marvelouswind: {
+		name: "Marvelous Wind",
+		desc: "Confuse the target.",
+	},
+	fatalscythe: {
+		name: "Fatals Scythe",
+		desc: "Hits twice. Has a 30% chance to lower the target's defense by one.",
+	},
 	toxicsyrup: {
 		name: "Toxic Syrup",
 		desc: "The user restores 1/2 of its maximum HP, rounded half up. Poisoned the user.",
+	},
+	forestsong: {
+		desc: "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 75% of the damage dealt.",
+	},
+	dragonbrawl: {
+		desc: "Cannot be selected the turn after it's used.",
 	},
 	tomahawk: {
 		name: "Toma-Hawk",
