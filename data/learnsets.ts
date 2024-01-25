@@ -25559,7 +25559,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			twister: ["4T"],
 			uproar: ["8M"],
 			waterpulse: ["7T", "6T", "4M"],
-			willowisp: ["9M"]
+			willowisp: ["9M"],
 			wish: ["8L1"],
 			workup: ["8M", "7M", "5M"],
 			yawn: ["8L1"],
