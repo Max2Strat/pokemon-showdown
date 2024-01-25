@@ -29739,7 +29739,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			leer: ["9L1", "8L1", "7L1", "6L1", "5L1", "4L1"],
 			lowkick: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			lowsweep: ["9M", "8M", "7M", "6M", "5M"],
-			machpunch: ["9L33"]
+			machpunch: ["9L33"],
 			megakick: ["8M"],
 			megapunch: ["8M"],
 			metalclaw: ["9M", "9L18", "8L18", "7L22", "6L22", "5L22", "4L42"],
