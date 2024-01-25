@@ -19971,7 +19971,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			psywave: ["7V"],
 			rage: ["7V"],
 			raindance: ["9M", "9L50", "8M", "8L50", "7M", "7L22", "7V", "6M", "6L22", "5M", "5L22", "4M", "4L22", "3M", "3L37", "3S0"],
-			razorleaf: ["9L1"]
+			razorleaf: ["9L1"],
 			reflect: ["9M", "8V", "7V"],
 			refresh: ["7E", "6E", "5E", "4E", "3E"],
 			rest: ["9M", "8M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
