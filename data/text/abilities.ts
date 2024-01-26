@@ -42,8 +42,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Air Force",
 		shortDesc: "On switch-in, sets Tailwind on the field.",
 	},
-	bull: {
-		name: "Bull",
+	crashtest: {
+		name: "Crash Test",
 		desc: "This Pokemon's attacks with recoil or crash damage have their power multiplied by 1.5. Does not affect Struggle.",
 		shortDesc: "This Pokemon's attacks with recoil or crash damage have 1.5x power; not Struggle.",
 	},
