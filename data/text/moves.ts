@@ -109,7 +109,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	scalepiercer: {
 		name: "Scale-Piercer",
 		desc: "This move's type effectiveness against Dragon is changed to be super effective no matter what this move's type is.",
-      shortdesct: "Super effective on Dragon-type.",
+      shortDesc: "Super effective on Dragon-type.",
 },
 	sharpfang: {
 		name: "Sharp Fang",
