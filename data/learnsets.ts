@@ -576,6 +576,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			cut: ["7V", "6M", "5M", "4M", "3M"],
 			defensecurl: ["7V", "3T"],
 			defog: ["7T", "4M"],
+			sandflare: ["9L41"],
 			dig: ["9M", "8M", "8V", "7V", "6M", "5M", "4M", "3M"],
 			doubleedge: ["9M", "7V", "3T"],
 			doubleteam: ["7M", "7V", "6M", "5M", "4M", "3M"],
