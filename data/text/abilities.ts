@@ -47,8 +47,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's attacks with recoil or crash damage have their power multiplied by 1.5. Does not affect Struggle.",
 		shortDesc: "This Pokemon's attacks with recoil or crash damage have 1.5x power; not Struggle.",
 	},
-	huntersfang: {
-		name: "Hunter's Fang",
+	huntersfangs: {
+		name: "Hunter's Fangs",
 		desc: "This Pokemon's bite-based attacks have their power multiplied by 1.5. 20% chance to poison the target.",
 		shortDesc: "Bite-based attacks are x1.5 and have 20% chance to poison the target.",
 	},
