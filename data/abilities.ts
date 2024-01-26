@@ -96,16 +96,16 @@ desert: {
         rating: 3.5,
         num: 311,
 },
-	bull: {
+	crashtest: {
         onBasePowerPriority: 23,
         onBasePower(basePower, attacker, defender, move) {
             if (move.recoil || move.hasCrashDamage) {
-                this.debug('Bull boost');
+                this.debug('Crash Test boost');
                 return this.chainModify([6144, 4096]);
             }
         },
         flags: {},
-        name: "Bull",
+        name: "Crash Test",
         rating: 3,
         num: 322,
 	},
