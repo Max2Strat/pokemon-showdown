@@ -51,7 +51,6 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Hunter's Fang",
 		desc: "This Pokemon's bite-based attacks have their power multiplied by 1.5. 20% chance to poison the target.",
 		shortDesc: "Bite-based attacks are x1.5 and have 20% chance to poison the target.",
-
 	},
 	aerilate: {
 		name: "Aerilate",
