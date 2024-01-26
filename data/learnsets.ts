@@ -9356,7 +9356,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			teleport: ["8L1", "8V", "7L1", "7V", "6L1", "5L1", "5D", "4L1", "3L1"],
 			thunderpunch: ["8M", "8V", "7T", "7E", "7V", "6T", "6E", "5T", "5E", "4T", "4E", "3T", "3E"],
 			nightslash: ["9L18"],
-			thief: ["9L1"],
+			thief: ["8L1"],
 			nastyplot: ["8L50", "8M"],
 			thunderwave: ["8M", "8V", "7M", "7V", "6M", "5M", "4M", "3T"],
 			torment: ["7M", "6M", "5M", "4M", "3M"],
