@@ -11636,7 +11636,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	greninja: {
 		num: 658,
 		name: "Greninja",
-		types: ["Water", "Dark"],
+		types: ["Water", "Ghost"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 72, atk: 95, def: 67, spa: 103, spd: 71, spe: 122},
 		abilities: {0: "Torrent", H: "Protean", S: "Adaptability"},
