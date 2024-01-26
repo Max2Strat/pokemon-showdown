@@ -398,7 +398,7 @@ if (target.getMoveHitData(move).typeMod < 0) {
         rating: 4.5,
         num: 316,
    },
- duelist: {
+duelist: {
         onBasePowerPriority: 21,
         onBasePower(basePower, pokemon) {
             let boosted = false;
@@ -411,7 +411,7 @@ if (target.getMoveHitData(move).typeMod < 0) {
             }
             if (boosted) {
                 this.debug('Duelist boost');
-                return this.chainModify([5325, 4096]);
+                return this.chainModify([4915, 4096]);
             }
         },
         flags: {},
