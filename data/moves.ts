@@ -35,6 +35,25 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1, wind: 1},
 },
+	sandflare: {
+		num: 932,
+		accuracy: 100,
+      noPPBoosts: true,
+		basePower: 90,
+		category: "Special",
+		name: "Sand Flare",
+		pp: 16,
+      self: {
+			onHit(source) {
+				if (!source.volatiles['dynamax']) return;
+				this.field.setWeather('sandstorm');
+			},
+		},
+		target: "normal",
+		type: "Fire",
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1},
+},
 	forestsong: {
 		num: 933,
 		accuracy: 100,
