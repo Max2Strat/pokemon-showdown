@@ -35,6 +35,25 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1, wind: 1},
 },
+	sandflare: {
+		num: 932,
+		accuracy: 100,
+      noPPBoosts: true,
+		basePower: 90,
+		category: "Special",
+		name: "Sand Flare",
+		pp: 16,
+      self: {
+			onHit(source) {
+				if (!source.volatiles['dynamax']) return;
+				this.field.setWeather('sandstorm');
+			},
+		},
+		target: "normal",
+		type: "Fire",
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1},
+},
 	forestsong: {
 		num: 933,
 		accuracy: 100,
@@ -242,7 +261,7 @@ this.heal(target.maxhp);
    scalepiercer: {
 		num: 926,
 		accuracy: 85,
-		basePower: 90,
+		basePower: 80,
       noPPBoosts: true,
 		category: "Physical",
 		name: "Scale-Piercer",
@@ -277,6 +296,64 @@ this.heal(target.maxhp);
         type: "Poison",
         contestType: "Clever",
    },
+destinyshield: {
+        num: 929,
+        accuracy: true,
+        basePower: 0,
+        category: "Statut",
+        name: "Destiny Shield",
+        pp: 5,
+        priority: 5,
+       flags: {noassist: 1, failcopycat: 1, failinstruct: 1},
+        stallingMove: true,
+        volatileStatus: 'destinyshield',
+        onPrepareHit(pokemon) {
+            return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+        },
+        onHit(pokemon) {
+            pokemon.addVolatile('stall');
+        },
+        condition: {
+            duration: 1,
+            onStart(target) {
+                this.add('-singleturn', target, 'Protect');
+            },
+            onTryHitPriority: 3,
+            onTryHit(target, source, move) {
+                if (!move.flags['protect'] || move.category === 'Status') {
+                    if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
+                    if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
+                    return;
+                }
+                if (move.smartTarget) {
+                    move.smartTarget = false;
+                } else {
+                    this.add('-activate', target, 'move: Protect');
+                }
+                const lockedmove = source.getVolatile('lockedmove');
+                if (lockedmove) {
+                    // Outrage counter is reset
+                    if (source.volatiles['lockedmove'].duration === 2) {
+                        delete source.volatiles['lockedmove'];
+                    }
+                }
+                
+                    this.boost({spa: -1}, source, target);
+                
+                return this.NOT_FAIL;
+            },    
+                onHit(target, source, move) {
+                if (move.isZOrMaxPowered) {
+                    this.boost({spa: -1}, source, target);
+                }
+            },
+        }, 
+       
+  secondary: null,
+        target: "self",
+        type: "Psychic",
+        contestType: "Clever",
+ },
    leaderssoul: {
 		num: 928,
 		accuracy: true,
@@ -299,59 +376,6 @@ this.heal(target.maxhp);
 		type: "Dragon",
 		contestType: "Clever",
    },
-  destinyshield: {
-        num: 929,
-        accuracy: true,
-        basePower: 0,
-        category: "Status",
-        name: "Destiny Shield",
-        pp: 5,
-        priority: 4,
-        flags: {noassist: 1, failcopycat: 1},
-        stallingMove: true,
-        volatileStatus: 'protect',
-        onPrepareHit(pokemon) {
-            return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
-        },
-        onHit(pokemon) {
-            pokemon.addVolatile('stall');
-        },
-        condition: {
-            duration: 1,
-            onStart(target) {
-                this.add('-singleturn', target, 'Protect');
-            },
-            onTryHitPriority: 3,
-            onTryHit(target, source, move) {
-                boosts: {
-                spa: -1,
-                }
-                if (!move.flags['protect'] || move.category === 'Status') {
-                    if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
-                    if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
-                    return;
-                }
-                if (move.smartTarget) {
-                    move.smartTarget = false;
-                } else {
-                    this.add('-activate', target, 'move: Protect');
-                }
-                const lockedmove = source.getVolatile('lockedmove');
-                if (lockedmove) {
-                    // Outrage counter is reset
-                    if (source.volatiles['lockedmove'].duration === 2) {
-                        delete source.volatiles['lockedmove'];
-                    }
-                }
-                return this.NOT_FAIL;
-            },
-        },
-      secondary: null,
-        target: "self",
-        type: "Psychic",
-        zMove: {effect: 'clearnegativeboost'},
-        contestType: "Clever",
- },
    sharpfang: {
 		num: 930,
 		accuracy: 90,

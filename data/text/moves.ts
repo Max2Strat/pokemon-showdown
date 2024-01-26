@@ -29,7 +29,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	hunterfang: {
 		name: "Hunter Fang",
 		desc: "Ignore the target ability.",
-      shortDesc: "Ignore the target ability.",
+      shortDesc: "This move and its effects ignore the Abilities of other Pokemon.",
 	},
 	windypalm: {
 		name: "Windy Palm",
@@ -48,18 +48,23 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	marvelouswind: {
 		name: "Marvelous Wind",
-		desc: "Confuse the target.",
-      shortDesc: "Confuse the target.",
+		desc: "Confuses the target.",
+      shortDesc: "Confuses the target.",
 	},
 	fatalscythe: {
-		name: "Fatals Scythe",
-		desc: "Hits twice. Has a 30% chance to lower the target's defense by one.",
-      shortDesc: "Hits twice. Has a 30% chance to lower the target's defense by one.",
+		name: "Fatal Scythe",
+		desc: "Hits twice. Has a 30% chance to lower the target's defense by 1 stage.",
+      shortDesc: "Hits twice. Has a 30% chance to lower the target's defense by 1 stage.",
+	},
+	sandflare: {
+		name: "Sand Flare",
+		desc: "If this move is successful, the effect of Sandstorm begins.",
+		shortDesc: "Starts Sandstorm.",
 	},
 	toxicsyrup: {
 		name: "Toxic Syrup",
-		desc: "The user restores 1/2 of its maximum HP, rounded half up. Poisoned the user.",
-      shortDesc: "Restores 1/2 of maximum HP. Poisoned the user.",
+		desc: "The user restores 1/2 of its maximum HP, rounded half up. Poisons its user.",
+      shortDesc: "Restores 1/2 of maximum HP. Poisons its user.",
 	},
 	forestsong: {
       name: "Forest Song",
@@ -109,7 +114,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	scalepiercer: {
 		name: "Scale-Piercer",
 		desc: "This move's type effectiveness against Dragon is changed to be super effective no matter what this move's type is.",
-      shortdesct: "Super effective on Dragon-type.",
+      shortDesc: "Super effective on Dragon-type.",
 },
 	sharpfang: {
 		name: "Sharp Fang",
