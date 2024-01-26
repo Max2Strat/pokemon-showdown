@@ -10922,7 +10922,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Mienfoo",
 		types: ["Fighting", "Flying"],
 		baseStats: {hp: 62, atk: 65, def: 60, spa: 90, spd: 55, spe: 75},
-		abilities: {0: "Wind Rider", 1: "Regenerator", H: "Reckless"},
+		abilities: {0: "Wind Rider", 1: "Regenerator", H: "Air Force"},
 		heightm: 0.9,
 		weightkg: 20,
 		color: "Yellow",
