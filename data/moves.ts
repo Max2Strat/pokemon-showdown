@@ -107,7 +107,6 @@ export const Moves: {[moveid: string]: MoveData} = {
       basePower: 0,
 		name: "Rising Sun",
 		pp: 1,
-      noPPBoosts: true,
 		priority: 5,
     onHit(target, source, move) {
 this.heal(target.maxhp);
