@@ -419,11 +419,9 @@ if (target.getMoveHitData(move).typeMod < 0) {
         rating: 2.5,
         num: 317,
     },
-    airforce: {
+  airforce: {
         onStart(source) {
-            const side = source.isAlly(target) ? source.side.foe : source.side;
-            const Tailwind = side.sideConditions['tailwind'];
-            side.addSideCondition('tailwind', source);
+            source.side.addSideCondition('tailwind', source);
         },
         flags: {},
         name: "Air Force",
