@@ -325,7 +325,7 @@ this.heal(target.maxhp);
             onTryHit(target, source, move) {
                 boosts: {
                 spa: -1,
-                },
+                }
                 if (!move.flags['protect'] || move.category === 'Status') {
                     if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
                     if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
@@ -346,7 +346,7 @@ this.heal(target.maxhp);
                 return this.NOT_FAIL;
             },
         },
-         secondary: null,
+      secondary: null,
         target: "self",
         type: "Psychic",
         zMove: {effect: 'clearnegativeboost'},
