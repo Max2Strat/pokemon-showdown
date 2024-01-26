@@ -79,7 +79,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	honorslash: {
 		name: "Honor Slash",
 		desc: "Power doubles if the target has more than or equal to half of its maximum HP remaining.",
-      shortDesc: "Power doubles if the target has more than 50% of maximum HP",
+      shortDesc: "Power doubles if the target has more than 50% HP",
 },
 	destinyshield: {
 		name: "Destiny Shield",
