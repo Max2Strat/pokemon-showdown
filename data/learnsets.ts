@@ -18980,7 +18980,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			stealthrock: ["9M"],
 			brickbreak: ["9M", "8M", "7M", "6M", "5M", "4M"],
 			bulkup: ["9M"],
-			bulldoze: ["9M", "8M", "7M", "6M", "5M"],
 			captivate: ["4M"],
 			charge: ["9M", "9L1", "8L1"],
 			chargebeam: ["9M", "7M", "6M", "5M", "4M"],
