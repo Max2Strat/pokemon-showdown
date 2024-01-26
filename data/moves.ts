@@ -299,18 +299,17 @@ this.heal(target.maxhp);
 		type: "Dragon",
 		contestType: "Clever",
    },
-   destinyshield: {
+  destinyshield: {
         num: 929,
         accuracy: true,
-        noPPBoosts: true,
         basePower: 0,
         category: "Status",
         name: "Destiny Shield",
         pp: 5,
-        priority: 5,
-       flags: {noassist: 1, failcopycat: 1, failinstruct: 1},
+        priority: 4,
+        flags: {noassist: 1, failcopycat: 1},
         stallingMove: true,
-        volatileStatus: 'kingsshield',
+        volatileStatus: 'protect',
         onPrepareHit(pokemon) {
             return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
         },
@@ -324,6 +323,9 @@ this.heal(target.maxhp);
             },
             onTryHitPriority: 3,
             onTryHit(target, source, move) {
+                boosts: {
+                spa: -1,
+                },
                 if (!move.flags['protect'] || move.category === 'Status') {
                     if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
                     if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
@@ -341,20 +343,13 @@ this.heal(target.maxhp);
                         delete source.volatiles['lockedmove'];
                     }
                 }
-                
-                    this.boost({spa: -1}, source, target);
-                
                 return this.NOT_FAIL;
-            },    
-                onHit(target, source, move) {
-                if (move.isZOrMaxPowered) {
-                    this.boost({spa: -1}, source, target);
-                }
             },
-        },        
-        secondary: null,
+        },
+         secondary: null,
         target: "self",
         type: "Psychic",
+        zMove: {effect: 'clearnegativeboost'},
         contestType: "Clever",
  },
    sharpfang: {
