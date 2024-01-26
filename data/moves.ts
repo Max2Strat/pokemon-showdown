@@ -261,7 +261,7 @@ this.heal(target.maxhp);
    scalepiercer: {
 		num: 926,
 		accuracy: 85,
-		basePower: 90,
+		basePower: 80,
       noPPBoosts: true,
 		category: "Physical",
 		name: "Scale-Piercer",
