@@ -11011,7 +11011,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Bouffalant",
 		types: ["Fighting", "Ghost"],
 		baseStats: {hp: 95, atk: 130, def: 90, spa: 64, spd: 90, spe: 75},
-		abilities: {0: "Cursed Body", H: "Bull"},
+		abilities: {0: "Cursed Body", H: "Crash Test"},
 		heightm: 1.6,
 		weightkg: 94.6,
 		color: "Brown",
