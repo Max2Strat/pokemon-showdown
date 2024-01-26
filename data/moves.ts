@@ -45,7 +45,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 16,
       self: {
 			onHit(source) {
-				if (!source.volatiles['dynamax']) return;
 				this.field.setWeather('sandstorm');
 			},
 		},
