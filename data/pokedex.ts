@@ -3724,7 +3724,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	flaaffy: {
 		num: 180,
 		name: "Flaaffy",
-		types: ["Grass"],
+		types: ["Grass", "Electric"],
 		baseStats: {hp: 75, atk: 45, def: 70, spa: 80, spd: 60, spe: 45},
 		abilities: {0: "Lightning Rod", 1: "Effect Spore", H: "Fur Coat"},
 		heightm: 0.8,
@@ -3738,7 +3738,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	ampharos: {
 		num: 181,
 		name: "Ampharos",
-		types: ["Grass"],
+		types: ["Grass", "Electric"],
 		baseStats: {hp: 95, atk: 65, def: 90, spa: 105, spd: 90, spe: 55},
 		abilities: {0: "Lightning Rod", 1: "Effect Spore", H: "Fur Coat"},
 		heightm: 1.4,
@@ -17385,7 +17385,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	finizen: {
 		num: 963,
 		name: "Finizen",
-		types: ["Dark"],
+		types: ["Water", "Dark"],
 		baseStats: {hp: 70, atk: 45, def: 40, spa: 45, spd: 40, spe: 75},
 		abilities: {0: "Regenerator"},
 		heightm: 1.3,
@@ -17398,7 +17398,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 964,
 		name: "Palafin",
 		baseForme: "Zero",
-		types: ["Dark"],
+		types: ["Water", "Dark"],
 		baseStats: {hp: 100, atk: 70, def: 72, spa: 53, spd: 62, spe: 100},
 		abilities: {0: "Zero to Hero"},
 		heightm: 1.3,
