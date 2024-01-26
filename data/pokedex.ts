@@ -13625,7 +13625,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	comfey: {
 		num: 764,
 		name: "Comfey",
-		types: ["Fairy"],
+		types: ["Fairy", "Flying"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 51, atk: 52, def: 90, spa: 82, spd: 110, spe: 100},
 		abilities: {0: "Flower Veil", 1: "Triage", H: "Natural Cure"},
