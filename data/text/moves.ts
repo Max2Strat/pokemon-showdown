@@ -52,9 +52,14 @@ export const MovesText: {[k: string]: MoveText} = {
       shortDesc: "Confuses the target.",
 	},
 	fatalscythe: {
-		name: "Fatals Scythe",
+		name: "Fatal Scythe",
 		desc: "Hits twice. Has a 30% chance to lower the target's defense by 1 stage.",
       shortDesc: "Hits twice. Has a 30% chance to lower the target's defense by 1 stage.",
+	},
+	sandflare: {
+		name: "Sand Flare",
+		desc: "If this move is successful, the effect of Sandstorm begins.",
+		shortDesc: "Starts Sandstorm.",
 	},
 	toxicsyrup: {
 		name: "Toxic Syrup",
