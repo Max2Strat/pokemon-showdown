@@ -21,10 +21,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 	marvelouswind: {
 		num: 932,
 		accuracy: 85,
+      noPPBoosts: true,
 		basePower: 100,
 		category: "Special",
 		name: "Marvelous Wind",
-		pp: 10,
+		pp: 16,
       secondary: {
             chance: 100,
             volatileStatus: 'confusion',
@@ -38,9 +39,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		num: 933,
 		accuracy: 100,
 		basePower: 80,
+      noPPBoosts: true,
 		category: "Special",
 		name: "Forest Song",
-		pp: 16,
+		pp: 24,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1},
 		secondary: null,
@@ -52,6 +54,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	dragonbrawl: {
 		num: 934,
 		accuracy: 80,
+      noPPBoosts: true,
 		basePower: 140,
 		category: "Special",
 		name: "Dragon Brawl",
@@ -66,6 +69,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	nobrainrush: {
 		num: 920,
 		accuracy: 95,
+      noPPBoosts: true,
 		basePower: 70,
 		category: "Physical",
 		name: "No Brain Rush",
@@ -99,6 +103,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		num: 936,
 		accuracy: true,
 		category: "Status",
+      noPPBoosts: true,
       basePower: 0,
 		name: "Rising Sun",
 		pp: 1,
@@ -119,7 +124,8 @@ this.heal(target.maxhp);
 		basePower: 80,
 		category: "Physical",
 		name: "Fatal Scythe",
-		pp: 10,
+		pp: 16,
+      noPPBoosts: true,
       multihit: [2],
      secondary: {
 			chance: 30,
@@ -136,6 +142,7 @@ this.heal(target.maxhp);
 		num: 921,
 		accuracy: 50,
 		basePower: 150,
+      noPPBoosts: true,
 		category: "Special",
 		name: "Death Shot",
 		pp: 8,
@@ -153,6 +160,7 @@ this.heal(target.maxhp);
 		category: "Physical",
 		name: "Death Parade",
 		pp: 12,
+      noPPBoosts: true,
       recoil: [1, 4],
       priority: 0,
 		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
@@ -164,6 +172,7 @@ this.heal(target.maxhp);
  honorslash: {
 		num: 922,
 		accuracy: 100,
+      noPPBoosts: true,
       basePower: 70,
 		onBasePower(basePower, pokemon, target) {
             if (target.hp * 2 >= target.maxhp) {
@@ -186,6 +195,7 @@ this.heal(target.maxhp);
 		basePower: 80,
 		category: "Special",
 		name: "Windy Palm",
+      noPPBoosts: true,
 		pp: 24,
 		priority: 2,
 		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
@@ -197,6 +207,7 @@ this.heal(target.maxhp);
    hunterfang: {
 		num: 924,
 		accuracy: 90,
+      noPPBoosts: true,
 		basePower: 80,
 		category: "Physical",
 		name: "Hunter Fang",
@@ -214,6 +225,7 @@ this.heal(target.maxhp);
 		accuracy: 100,
 		basePower: 130,
 		category: "Physical",
+      noPPBoosts: true,
 		name: "Toma-Hawk",
 		pp: 8,
 		priority: 0,
@@ -232,6 +244,7 @@ this.heal(target.maxhp);
 		num: 926,
 		accuracy: 85,
 		basePower: 90,
+      noPPBoosts: true,
 		category: "Physical",
 		name: "Scale-Piercer",
 		pp: 16,
@@ -249,9 +262,10 @@ this.heal(target.maxhp);
         num: 927,
         accuracy: true,
         basePower: 0,
+       noPPBoosts: true,
         category: "Status",
         name: "Toxic Syrup",
-        pp: 10,
+        pp: 12,
       onHit(target, source, move) {
             const result = target.setStatus('tox', source, move);
             if (!result) return result;
@@ -289,10 +303,11 @@ this.heal(target.maxhp);
    destinyshield: {
         num: 929,
         accuracy: true,
+        noPPBoosts: true,
         basePower: 0,
         category: "Status",
         name: "Destiny Shield",
-        pp: 5,
+        pp: 36,
         priority: 5,
        flags: {noassist: 1, failcopycat: 1, failinstruct: 1},
         stallingMove: true,
@@ -346,6 +361,7 @@ this.heal(target.maxhp);
    sharpfang: {
 		num: 930,
 		accuracy: 90,
+      noPPBoosts: true,
       basePower: 0,
         damageCallback(pokemon, target) {
             return this.clampIntRange(target.getUndynamaxedHP() / 2, 1);
