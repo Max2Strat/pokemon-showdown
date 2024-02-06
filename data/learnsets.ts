@@ -18373,6 +18373,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			aerialace: ["9M", "7M", "6M", "6S5", "5M", "4M", "3M"],
 			agility: ["9M", "9L1", "8M", "8L1", "7L17", "7V", "6L17", "6S5", "6S6", "5L17", "4L17", "4S1", "3L21"],
 			aircutter: ["9M"],
+			scalepiercer: ["9M"],
 			featherdance: ["9M"],
 			airslash: ["9M", "9L1", "8M", "8L1"],
 			assurance: ["8M"],
@@ -19382,6 +19383,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 		learnset: {
 			attract: ["8M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			bide: ["7V"],
+			scalepiercer: ["9M"],
 			bind: ["8L8", "8V", "7T", "7L4", "7V", "6T", "6L4", "5T", "5L4", "4L4", "3L7"],
 			bodyslam: ["8M", "7V", "3T"],
 			brickbreak: ["8M", "8V", "7M", "7L26", "6M", "6L18", "5M", "5L18", "4M", "4L21", "3M", "3L31"],
@@ -29407,6 +29409,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	heracross: {
 		learnset: {
 			aerialace: ["9M", "9L15", "8L15", "7M", "7L10", "6M", "6L10", "5M", "5L10", "4M", "4L13"],
+			scalepiercer: ["9M"],
 			armthrust: ["9L1", "7L1", "6L1"],
 			assurance: ["8M"],
 			attract: ["8M", "7M", "7V", "6M", "5M", "4M", "3M"],
@@ -31799,6 +31802,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	donphan: {
 		learnset: {
 			ancientpower: ["4T"],
+			scalepiercer: ["9M"],
 			assurance: ["9L15", "7L15", "6L15", "5L31", "4L31"],
 			attract: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			block: ["7T", "6T", "5T", "4T"],
@@ -61802,6 +61806,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			acidspray: ["8L16"],
 			aerialace: ["7M", "6M", "5M"],
 			agility: ["8M"],
+			scalepiercer: ["9M"],
 			attract: ["8M", "7M", "6M", "5M"],
 			brutalswing: ["8M", "7M"],
 			bugbite: ["7T", "6T", "5T"],
@@ -64274,6 +64279,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			attract: ["8M", "7M", "6M", "5M"],
 			bite: ["8L5", "7L9", "6L9", "5L9", "5D"],
 			bodyslam: ["8M"],
+			scalepiercer: ["9M"],
 			bulldoze: ["8M", "7M", "6M", "5M"],
 			chargebeam: ["7M", "6M", "5M"],
 			chipaway: ["7L31", "6L31", "5L31"],
@@ -64668,6 +64674,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			assurance: ["9L25", "8M", "8L25", "7L33", "6L33", "5L33"],
 			attract: ["8M", "7M", "6M", "5M"],
 			beatup: ["8M"],
+			scalepiercer: ["9M"],
 			brickbreak: ["9M", "8M", "7M", "6M", "5M"],
 			confide: ["7M", "6M"],
 			cut: ["6M", "5M"],
@@ -67092,6 +67099,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			fling: ["9M", "7M", "6M", "5M"],
 			focusblast: ["9M", "7M", "6M", "5M"],
 			focuspunch: ["9M", "7T", "6T"],
+			forestsong: ["9L50"],
 			frustration: ["7M", "6M", "5M"],
 			gigaimpact: ["9M", "7M", "6M", "5M"],
 			grassknot: ["9M", "7M", "6M", "5M"],
