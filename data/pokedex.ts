@@ -11921,7 +11921,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseForme: "Red",
 		types: ["Poison"],
 		gender: "F",
-		baseStats: {hp: 78, atk: 65, def: 68, spa: 112, spd: 154, spe: 75},
+		baseStats: {hp: 98, atk: 65, def: 88, spa: 125, spd: 154, spe: 75},
 		abilities: {0: "Flower Veil", H: "Symbiosis"},
 		heightm: 1.1,
 		weightkg: 10,
