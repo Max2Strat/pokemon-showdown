@@ -8554,7 +8554,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Azelf",
 		types: ["Psychic"],
 		gender: "N",
-		baseStats: {hp: 95, atk: 140, def: 70, spa: 140, spd: 70, spe: 115},
+		baseStats: {hp: 95, atk: 140, def: 90, spa: 140, spd: 90, spe: 115},
 		abilities: {0: "Dimension of the Braves "},
 		heightm: 0.3,
 		weightkg: 0.3,
