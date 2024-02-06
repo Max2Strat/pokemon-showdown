@@ -17,385 +17,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
-},
-	marvelouswind: {
-		num: 932,
-		accuracy: 85,
-      noPPBoosts: true,
-		basePower: 100,
-		category: "Special",
-		name: "Marvelous Wind",
-		pp: 16,
-      secondary: {
-            chance: 100,
-            volatileStatus: 'confusion',
-        },
-		target: "normal",
-		type: "Flying",
-		priority: 0,
-		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1, wind: 1},
-},
-	sandflare: {
-		num: 932,
-		accuracy: 100,
-      noPPBoosts: true,
-		basePower: 90,
-		category: "Special",
-		name: "Sand Flare",
-		pp: 16,
-      self: {
-			onHit(source) {
-				this.field.setWeather('sandstorm');
-			},
-		},
-		target: "normal",
-		type: "Fire",
-		priority: 0,
-		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1},
-},
-	forestsong: {
-		num: 933,
-		accuracy: 100,
-		basePower: 80,
-      noPPBoosts: true,
-		category: "Special",
-		name: "Forest Song",
-		pp: 16,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1},
-		secondary: null,
-      drain: [3, 4],
-		target: "allAdjacentFoes",
-		type: "Grass",
-		contestType: "Cool",
-},
-	dragonbrawl: {
-		num: 934,
-		accuracy: 80,
-      noPPBoosts: true,
-		basePower: 140,
-		category: "Special",
-		name: "Dragon Brawl",
-		pp: 16,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1, cantusetwice: 1},
-		secondary: null,
-		target: "normal",
-		type: "Dragon",
-		contestType: "Cool",
-	},
-	nobrainrush: {
-		num: 920,
-		accuracy: 95,
-      noPPBoosts: true,
-		basePower: 70,
-		category: "Physical",
-		name: "No Brain Rush",
-		pp: 16,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		secondary: {
-            chance: 20,
-            volatileStatus: 'confusion',
-        },
-		target: "normal",
-		type: "Psychic",
-		contestType: "Clever",
-	},
-	lunareclipse: {
-		num: 935,
-		accuracy: true,
-		category: "Special",
-		name: "Lunar Eclipse",
-		pp: 1,
-      noPPBoosts: true,
-      ohko: true,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		secondary: null,
-		target: "normal",
-		type: "Dark",
-		contestType: "Clever",
-},
-	risingsun: {
-		num: 936,
-		accuracy: true,
-		category: "Status",
-      noPPBoosts: true,
-      basePower: 0,
-		name: "Rising Sun",
-		pp: 1,
-		priority: 5,
-    onHit(target, source, move) {
-this.heal(target.maxhp);
-}, 
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		secondary: null,
-		target: "self",
-		type: "Fairy",
-		contestType: "Clever",
-},
-	fatalscythe: {
-		num: 937,
-		accuracy: 100,
-		basePower: 80,
-		category: "Physical",
-		name: "Fatal Scythe",
-		pp: 16,
-      noPPBoosts: true,
-      multihit: [2],
-     secondary: {
-			chance: 30,
-			boosts: {
-				def: -1,
-			},
-		},
-		target: "normal",
-		type: "Dark",
-		priority: 0,
-		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1},
-	},
-   deathshot: {
-		num: 921,
-		accuracy: 50,
-		basePower: 150,
-      noPPBoosts: true,
-		category: "Special",
-		name: "Death Shot",
-		pp: 5,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		secondary: null,
-		target: "normal",
-		type: "Dark",
-		contestType: "Clever",
-},
-   deathparade: {
-		num: 931,
-		accuracy: 100,
-		basePower: 120,
-		category: "Physical",
-		name: "Death Parade",
-		pp: 16,
-      noPPBoosts: true,
-      recoil: [1, 4],
-      priority: 0,
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		secondary: null,
-		target: "normal",
-		type: "Ghost",
-		contestType: "Clever",
- },
- honorslash: {
-		num: 922,
-		accuracy: 100,
-      noPPBoosts: true,
-      basePower: 70,
-		onBasePower(basePower, pokemon, target) {
-            if (target.hp * 2 >= target.maxhp) {
-                return this.chainModify(2);
-            }
-        },
-		category: "Physical",
-		name: "Honor Slash",
-		pp: 16,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		secondary: null,
-		target: "normal",
-		type: "Steel",
-		contestType: "Clever",
- },
- windypalm: {
-		num: 923,
-		accuracy: 100,
-		basePower: 80,
-		category: "Special",
-		name: "Windy Palm",
-      noPPBoosts: true,
-		pp: 16,
-		priority: 2,
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		secondary: null,
-		target: "normal",
-		type: "Flying",
-		contestType: "Clever",
-   },
-   hunterfang: {
-		num: 924,
-		accuracy: 90,
-      noPPBoosts: true,
-		basePower: 80,
-		category: "Physical",
-		name: "Hunter Fang",
-		pp: 16,
-      ignoreAbility: true,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1, bite: 1},
-		secondary: null,
-		target: "normal",
-		type: "Dragon",
-		contestType: "Clever",
-   },
-   tomahawk: {
-		num: 925,
-		accuracy: 100,
-		basePower: 130,
-		category: "Physical",
-      noPPBoosts: true,
-		name: "Toma-Hawk",
-		pp: 5,
-		priority: 0,
-      self: {
-            boosts: {
-                def: -1,
-            },
       },
-      flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		secondary: null,
-		target: "normal",
-		type: "Fighting",
-		contestType: "Clever",
-   },
-   scalepiercer: {
-		num: 926,
-		accuracy: 85,
-		basePower: 80,
-      noPPBoosts: true,
-		category: "Physical",
-		name: "Scale-Piercer",
-		pp: 16,
-      onEffectiveness(typeMod, target, type) {
-            if (type === 'Dragon') return 1;
-        },
-		priority: 0,
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		secondary: null,
-		target: "normal",
-		type: "Steel",
-		contestType: "Clever",
-   },
-  toxicsyrup: {
-        num: 927,
-        accuracy: true,
-        basePower: 0,
-       noPPBoosts: true,
-        category: "Status",
-        name: "Toxic Syrup",
-        pp: 16,
-      onHit(target, source, move) {
-            const result = target.setStatus('tox', source, move);
-            if (!result) return result;
-        },
-      heal: [1, 2],
-        priority: 0,
-        flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-        secondary: null,
-        target: "self",
-        type: "Poison",
-        contestType: "Clever",
-   },
-destinyshield: {
-        num: 929,
-        accuracy: true,
-        basePower: 0,
-        category: "Statut",
-        name: "Destiny Shield",
-        pp: 5,
-        priority: 5,
-       flags: {noassist: 1, failcopycat: 1, failinstruct: 1},
-        stallingMove: true,
-        volatileStatus: 'destinyshield',
-        onPrepareHit(pokemon) {
-            return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
-        },
-        onHit(pokemon) {
-            pokemon.addVolatile('stall');
-        },
-        condition: {
-            duration: 1,
-            onStart(target) {
-                this.add('-singleturn', target, 'Protect');
-            },
-            onTryHitPriority: 3,
-            onTryHit(target, source, move) {
-                if (!move.flags['protect'] || move.category === 'Status') {
-                    if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
-                    if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
-                    return;
-                }
-                if (move.smartTarget) {
-                    move.smartTarget = false;
-                } else {
-                    this.add('-activate', target, 'move: Protect');
-                }
-                const lockedmove = source.getVolatile('lockedmove');
-                if (lockedmove) {
-                    // Outrage counter is reset
-                    if (source.volatiles['lockedmove'].duration === 2) {
-                        delete source.volatiles['lockedmove'];
-                    }
-                }
-                
-                    this.boost({spa: -1}, source, target);
-                
-                return this.NOT_FAIL;
-            },    
-                onHit(target, source, move) {
-                if (move.isZOrMaxPowered) {
-                    this.boost({spa: -1}, source, target);
-                }
-            },
-        }, 
-       
-  secondary: null,
-        target: "self",
-        type: "Psychic",
-        contestType: "Clever",
- },
-   leaderssoul: {
-		num: 928,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Leader's Soul",
-		pp: 1,
-      noPPBoosts: true,
-		priority: 0,
-      boosts: {
-            atk: 1,
-            def: 1,
-            spa: 1,
-            spd: 1,
-            spe: 1,
-        },
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		secondary: null,
-		target: "self",
-		type: "Dragon",
-		contestType: "Clever",
-   },
-   sharpfang: {
-		num: 930,
-		accuracy: 90,
-      noPPBoosts: true,
-      basePower: 0,
-        damageCallback(pokemon, target) {
-            return this.clampIntRange(target.getUndynamaxedHP() / 2, 1);
-        },
-      secondary: {
-            chance: 30,
-            status: 'par',
-        },
-		category: "Physical",
-		name: "Sharp Fang",
-		pp: 16,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
-		target: "normal",
-		type: "Bug",
-		contestType: "Clever",
-   },
 	absorb: {
 		num: 71,
 		accuracy: 100,
@@ -11453,6 +11075,383 @@ destinyshield: {
 		type: "Psychic",
 		zMove: {boost: {spd: 2}},
 		contestType: "Beautiful",
+},
+	marvelouswind: {
+		num: 932,
+		accuracy: 85,
+      noPPBoosts: true,
+		basePower: 100,
+		category: "Special",
+		name: "Marvelous Wind",
+		pp: 16,
+      secondary: {
+            chance: 100,
+            volatileStatus: 'confusion',
+        },
+		target: "normal",
+		type: "Flying",
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1, wind: 1},
+},
+	sandflare: {
+		num: 932,
+		accuracy: 100,
+      noPPBoosts: true,
+		basePower: 90,
+		category: "Special",
+		name: "Sand Flare",
+		pp: 16,
+      self: {
+			onHit(source) {
+				this.field.setWeather('sandstorm');
+			},
+		},
+		target: "normal",
+		type: "Fire",
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1},
+},
+	forestsong: {
+		num: 933,
+		accuracy: 100,
+		basePower: 80,
+      noPPBoosts: true,
+		category: "Special",
+		name: "Forest Song",
+		pp: 16,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1},
+		secondary: null,
+      drain: [3, 4],
+		target: "allAdjacentFoes",
+		type: "Grass",
+		contestType: "Cool",
+},
+	dragonbrawl: {
+		num: 934,
+		accuracy: 80,
+      noPPBoosts: true,
+		basePower: 140,
+		category: "Special",
+		name: "Dragon Brawl",
+		pp: 16,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1, cantusetwice: 1},
+		secondary: null,
+		target: "normal",
+		type: "Dragon",
+		contestType: "Cool",
+	},
+	nobrainrush: {
+		num: 920,
+		accuracy: 95,
+      noPPBoosts: true,
+		basePower: 70,
+		category: "Physical",
+		name: "No Brain Rush",
+		pp: 16,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+		secondary: {
+            chance: 20,
+            volatileStatus: 'confusion',
+        },
+		target: "normal",
+		type: "Psychic",
+		contestType: "Clever",
+	},
+	lunareclipse: {
+		num: 935,
+		accuracy: true,
+		category: "Special",
+		name: "Lunar Eclipse",
+		pp: 1,
+      noPPBoosts: true,
+      ohko: true,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		contestType: "Clever",
+},
+	risingsun: {
+		num: 936,
+		accuracy: true,
+		category: "Status",
+      noPPBoosts: true,
+      basePower: 0,
+		name: "Rising Sun",
+		pp: 1,
+		priority: 5,
+    onHit(target, source, move) {
+this.heal(target.maxhp);
+}, 
+		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+		secondary: null,
+		target: "self",
+		type: "Fairy",
+		contestType: "Clever",
+},
+	fatalscythe: {
+		num: 937,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Fatal Scythe",
+		pp: 16,
+      noPPBoosts: true,
+      multihit: [2],
+     secondary: {
+			chance: 30,
+			boosts: {
+				def: -1,
+			},
+		},
+		target: "normal",
+		type: "Dark",
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1},
+	},
+   deathshot: {
+		num: 921,
+		accuracy: 50,
+		basePower: 150,
+      noPPBoosts: true,
+		category: "Special",
+		name: "Death Shot",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		contestType: "Clever",
+},
+   deathparade: {
+		num: 931,
+		accuracy: 100,
+		basePower: 120,
+		category: "Physical",
+		name: "Death Parade",
+		pp: 16,
+      noPPBoosts: true,
+      recoil: [1, 4],
+      priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+		secondary: null,
+		target: "normal",
+		type: "Ghost",
+		contestType: "Clever",
+ },
+ honorslash: {
+		num: 922,
+		accuracy: 100,
+      noPPBoosts: true,
+      basePower: 70,
+		onBasePower(basePower, pokemon, target) {
+            if (target.hp * 2 >= target.maxhp) {
+                return this.chainModify(2);
+            }
+        },
+		category: "Physical",
+		name: "Honor Slash",
+		pp: 16,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+		contestType: "Clever",
+ },
+ windypalm: {
+		num: 923,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Windy Palm",
+      noPPBoosts: true,
+		pp: 16,
+		priority: 2,
+		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+		secondary: null,
+		target: "normal",
+		type: "Flying",
+		contestType: "Clever",
+   },
+   hunterfang: {
+		num: 924,
+		accuracy: 90,
+      noPPBoosts: true,
+		basePower: 80,
+		category: "Physical",
+		name: "Hunter Fang",
+		pp: 16,
+      ignoreAbility: true,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1, bite: 1},
+		secondary: null,
+		target: "normal",
+		type: "Dragon",
+		contestType: "Clever",
+   },
+   tomahawk: {
+		num: 925,
+		accuracy: 100,
+		basePower: 130,
+		category: "Physical",
+      noPPBoosts: true,
+		name: "Toma-Hawk",
+		pp: 5,
+		priority: 0,
+      self: {
+            boosts: {
+                def: -1,
+            },
+      },
+      flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+		secondary: null,
+		target: "normal",
+		type: "Fighting",
+		contestType: "Clever",
+   },
+   scalepiercer: {
+		num: 926,
+		accuracy: 85,
+		basePower: 80,
+      noPPBoosts: true,
+		category: "Physical",
+		name: "Scale-Piercer",
+		pp: 16,
+      onEffectiveness(typeMod, target, type) {
+            if (type === 'Dragon') return 1;
+        },
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+		contestType: "Clever",
+   },
+  toxicsyrup: {
+        num: 927,
+        accuracy: true,
+        basePower: 0,
+       noPPBoosts: true,
+        category: "Status",
+        name: "Toxic Syrup",
+        pp: 16,
+      onHit(target, source, move) {
+            const result = target.setStatus('tox', source, move);
+            if (!result) return result;
+        },
+      heal: [1, 2],
+        priority: 0,
+        flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+        secondary: null,
+        target: "self",
+        type: "Poison",
+        contestType: "Clever",
+   },
+destinyshield: {
+        num: 929,
+        accuracy: true,
+        basePower: 0,
+        category: "Statut",
+        name: "Destiny Shield",
+        pp: 5,
+        priority: 5,
+       flags: {noassist: 1, failcopycat: 1, failinstruct: 1},
+        stallingMove: true,
+        volatileStatus: 'destinyshield',
+        onPrepareHit(pokemon) {
+            return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+        },
+        onHit(pokemon) {
+            pokemon.addVolatile('stall');
+        },
+        condition: {
+            duration: 1,
+            onStart(target) {
+                this.add('-singleturn', target, 'Protect');
+            },
+            onTryHitPriority: 3,
+            onTryHit(target, source, move) {
+                if (!move.flags['protect'] || move.category === 'Status') {
+                    if (['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) return;
+                    if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
+                    return;
+                }
+                if (move.smartTarget) {
+                    move.smartTarget = false;
+                } else {
+                    this.add('-activate', target, 'move: Protect');
+                }
+                const lockedmove = source.getVolatile('lockedmove');
+                if (lockedmove) {
+                    // Outrage counter is reset
+                    if (source.volatiles['lockedmove'].duration === 2) {
+                        delete source.volatiles['lockedmove'];
+                    }
+                }
+                
+                    this.boost({spa: -1}, source, target);
+                
+                return this.NOT_FAIL;
+            },    
+                onHit(target, source, move) {
+                if (move.isZOrMaxPowered) {
+                    this.boost({spa: -1}, source, target);
+                }
+            },
+        },     
+  secondary: null,
+        target: "self",
+        type: "Psychic",
+        contestType: "Clever",
+ },
+   leaderssoul: {
+		num: 928,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Leader's Soul",
+		pp: 1,
+      noPPBoosts: true,
+		priority: 0,
+      boosts: {
+            atk: 1,
+            def: 1,
+            spa: 1,
+            spd: 1,
+            spe: 1,
+        },
+		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+		secondary: null,
+		target: "self",
+		type: "Dragon",
+		contestType: "Clever",
+   },
+   sharpfang: {
+		num: 930,
+		accuracy: 90,
+      noPPBoosts: true,
+      basePower: 0,
+        damageCallback(pokemon, target) {
+            return this.clampIntRange(target.getUndynamaxedHP() / 2, 1);
+        },
+      secondary: {
+            chance: 30,
+            status: 'par',
+        },
+		category: "Physical",
+		name: "Sharp Fang",
+		pp: 16,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+		target: "normal",
+		type: "Bug",
+		contestType: "Clever",
 	},
 	magicpowder: {
 		num: 750,
