@@ -139,7 +139,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Charizard-Mega-Y",
 		baseSpecies: "Charizard",
 		forme: "Mega-Y",
-		types: ["Fire", "Flying"],
+		types: ["Fire", "Ground"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 78, atk: 104, def: 78, spa: 159, spd: 115, spe: 100},
 		abilities: {0: "Drought"},
