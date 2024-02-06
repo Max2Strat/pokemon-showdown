@@ -90483,6 +90483,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 		learnset: {
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
+			scalepiercer: ["9M"],
 			brickbreak: ["9M", "9L28", "9S0"],
 			bulkup: ["9M"],
 			bulldoze: ["9M", "9L7"],
