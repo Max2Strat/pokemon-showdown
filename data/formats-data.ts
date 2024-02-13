@@ -5696,6 +5696,21 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+primordialhooh: {
+        tier: "OU",
+        doublesTier: "DOU",
+        natDexTier: "OU",
+	},
+primordiallugia: {
+        tier: "OU",
+        doublesTier: "DOU",
+        natDexTier: "OU",
+	},
+nigiryu: {
+        tier: "OU",
+        doublesTier: "DOU",
+        natDexTier: "OU",
+	},
 	syclar: {
 		isNonstandard: "CAP",
 		tier: "CAP LC",
