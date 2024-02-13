@@ -93331,6 +93331,20 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			{generation: 9, level: 88, nature: "Timid", moves: ["nastyplot", "toxic", "malignantchain", "shadowball"]},
 		],
 		eventOnly: true,
+		},
+	primordialhooh: {
+		learnset: {
+			sacredfire: ["9M"],
+			earthquake: ["9M"],
+			scaleshot: ["9M"],
+			dragonclaw: ["9M"],
+			dracometeor: ["9M"],
+			dragondance: ["9M"],
+			earthpower: ["9M"],
+			flareblitz: ["9M"],
+			fireblast: ["9M"],
+			risingsun: ["9M"],	
+		},
 	},
 	syclar: {
 		learnset: {
