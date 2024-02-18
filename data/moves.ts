@@ -11132,7 +11132,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 80,
       noPPBoosts: true,
 		basePower: 140,
-		category: "Special",
+		category: "Physical",
 		name: "Dragon Brawl",
 		pp: 16,
 		priority: 0,
