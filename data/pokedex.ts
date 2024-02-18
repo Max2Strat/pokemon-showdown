@@ -18469,7 +18469,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	},
 	primordiallugia: {
 		num: 1027,
-		name: "Primordial Ho-Oh",
+		name: "Primordial Lugia",
 		types: ["Dragon", "Dark"],
 		gender: "N",
 		baseStats: {hp: 130, atk: 110, def: 150, spa: 110, spd: 150, spe: 92},
