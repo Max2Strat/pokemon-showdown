@@ -93331,7 +93331,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			{generation: 9, level: 88, nature: "Timid", moves: ["nastyplot", "toxic", "malignantchain", "shadowball"]},
 		],
 		eventOnly: true,
-		},
+		},3
 	primordialhooh: {
 		learnset: {
 			sacredfire: ["9M"],
@@ -93344,6 +93344,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			flareblitz: ["9M"],
 			fireblast: ["9M"],
 			risingsun: ["9M"],	
+				},
 		},
 		primordiallugia: {
 		learnset: {
@@ -93358,6 +93359,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			lunardance: ["9M"],
 			lunareclipse: ["9M"],	
 			moonlight: ["9M"],	
+				},
 		},
 	syclar: {
 		learnset: {
