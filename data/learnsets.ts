@@ -93359,7 +93359,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			lunareclipse: ["9M"],	
 			moonlight: ["9M"],	
 		},
-	},
 	syclar: {
 		learnset: {
 			absorb: ["9L1", "8L1", "7L1"],
