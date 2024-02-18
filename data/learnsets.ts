@@ -93345,6 +93345,20 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			fireblast: ["9M"],
 			risingsun: ["9M"],	
 		},
+		primordiallugia: {
+		learnset: {
+			darkpulse: ["9M"],
+			earthquake: ["9M"],
+			scaleshot: ["9M"],
+			dragonclaw: ["9M"],
+			dracometeor: ["9M"],
+			dragondance: ["9M"],
+			earthpower: ["9M"],
+			psychic: ["9M"],
+			lunardance: ["9M"],
+			lunareclipse: ["9M"],	
+			moonlight: ["9M"],	
+		},
 	},
 	syclar: {
 		learnset: {
